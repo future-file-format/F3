@@ -1,0 +1,13 @@
+[package]
+name = "fff-ude"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+fff-core = { path = "../fff-core" }
+bytes = { workspace = true }
+arrow-array = { workspace = true, features = ["ffi"] }
+arrow-buffer = { workspace = true }
+arrow-data = { workspace = true, features = ["ffi"] }
+serde = { workspace = true }
+rkyv = { version = "0.8.10", features = ["unaligned"] }

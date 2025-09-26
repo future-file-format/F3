@@ -1,0 +1,15 @@
+[package]
+name = "fff-ude-example2"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-encoding = { workspace = true }
+fff-ude = { workspace = true }
+bytes = { workspace = true }
+arrow-buffer = { workspace = true }
+arrow-data = { workspace = true }
+vortex-sampling-compressor = { workspace = true }

@@ -1,0 +1,4298 @@
+{
+    "clickhouse-public-datasets_part-00072-3b445b0d-62f2-4ca8-bc0c-c38e7a753c4c-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "nyc311_part.32.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "ursa-labs-taxi-data-v2_part-0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 9.0.0-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "bauer-bucket_train_more_features.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00001-c7c6bf62-51db-473c-bb8f-a8e26a3c9fe6-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-palantir.7 (build 79edf7ed239cdc18c56b7aace97c23f689f439ec)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "svobodnyi-bucket-dlya-vsego-mira_yellow_tripdata_2022-01.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "datasets-documentation_0124_part_00.parquet": {
+        "version": "1",
+        "created_by": "Amazon Redshift",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "football-club-data_part-00122-c8320455-24e3-4573-bb8c-1eee742ba25d-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 815bcfa4a4aacf66d207b3dc692150d16b5740b9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-r-00004-9d6c9f40-3a23-40af-8e33-4d280563ac7b.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.6.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "sms2pro-dev_sms-transaction-02.parquet": {
+        "version": "1",
+        "created_by": "parquet.js",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v2"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-r-00002-9d6c9f40-3a23-40af-8e33-4d280563ac7b.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.6.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "datacoral-test_parquet1.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "minus34_part-00003-aee4c537-d9bc-4fed-8e9b-9e55d3824b1f-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "anaconda-training_part.29.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00020-tid-5923479634226188828-28a0fe10-f890-4d45-8570-2e57fd8236b3-68-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0007 (build e85ac9c3b4fc850a9bd610103df62822c8f84ee4)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "rohini_object_33_4_3.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT"
+    },
+    "saturn-public-data_part.32.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "huggingface-nlp_343e0c3f-1cec-455a-9e22-b1b9080a489a.wikipedia-train.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "clickhouse-public-datasets_part-00087-f3c960dc-588d-4fad-aed8-88099d01d84b-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "data_AgMERRA_1980_prate.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "dimajix-training_part-00046-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "numerai-public-datasets_latest_numerai_training_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-r-00015-9d6c9f40-3a23-40af-8e33-4d280563ac7b.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.6.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "fafalytics_2012-2021.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 4.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "apache-beam-samples_fhvhv_tripdata_2020-04.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "basedosdados-dev_despesa_1_2020.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.38.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00321-ea5b4ee5-0375-4a50-9b46-51db9e669c30-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databric6.1 (build 525e0192c899f018e5b4831607fa900167ecb064)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "stoic-public_part-00439.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2021-12.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "pangeo-data_data.729.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "alasarr_000000000006.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "anaconda-public-data_part.94.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "nyc311_part.18.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "huggingface-nlp_wikipedia-train-00023-of-00041.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00007-1f574219-08fe-4e18-bbab-47e5d917d3bc-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databric6.1 (build 525e0192c899f018e5b4831607fa900167ecb064)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00004-ced648ca-e8c8-46e5-8526-5ca85d56e67e-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.3 (build f8dced182c4c1fbdec6ccb3185537b5a01e6ed6b)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-r-00013-9d6c9f40-3a23-40af-8e33-4d280563ac7b.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.6.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "numerai-public-datasets-staging_latest_numerai_example_predictions_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "datacoral-test_yellow_tripdata_2022-01.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "fafalytics_500k-games.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00139-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.10.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "dimajix-training_part-00058-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "torch-datasets_license-000000000000.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "testing-datasets_post_hasTag_tag_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00001-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_rsg_info_ccu.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ursa-labs-taxi-data_data.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_InvoiceConverted.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "pangeo-data_data.593.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.4.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000011.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00005-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "plotly-tutorials_part.18.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "testing-datasets_forum_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000365.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00196-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.35.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "test-fraud_sgbidder-sgrtb-bidder-autoscale-pkbv-deex-Yes-2023-04-16-20-10-00.parquet": {
+        "version": "1",
+        "created_by": "parquet-go version latest",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "coiled-datasets_part.1985.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "stoic-public_part-00599.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_bing_covid-19_data_9ffdb752-646c-4bf8-9653-24a6667f99f4.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_prisma_cloud_data_security.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ubix_storage_part-r-00125-129a8192-b8f5-4b48-acb4-8f0ea31fedba.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "basedosdados-dev_despesa_10_2020.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "altinity-clickhouse-data_2000.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "lz4_raw"
+        ]
+    },
+    "training-ecommerce_part-00003-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2020-02.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-00000-278bacaa-3bbd-4eae-ab03-1c366a945d64.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks6 (build bd2ebc87e42b3936ac673e1556fa10fb8358307a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_WDCLAIMS.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "cloudbuildersday_part-r-00000-32423eb9-ea36-4d0c-86b6-7b2df90fe4aa.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.6.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "ubix_storage_part-r-00029-129a8192-b8f5-4b48-acb4-8f0ea31fedba.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "igortest7_test.csv.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00000-d7fb263e-ad5f-4bac-873a-397daf5cc1fa-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "snorkel-public_inferences.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00000-tid-971121271581815584-49b758a8-d859-4f82-8281-a7b3e64cd941-7493-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks9 (build cf6c823f85c3b69d49e1573e48e236148c709e82)",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "saturn-public-data_part.24.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "anaconda-training_part.20.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-01862-5c0a9c95-ef74-42af-83ee-282d43a9952f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "gx-ds_token_transfer_2018-08-06.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ht-artifacts_part.1.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "coiled-datasets_part.3437.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_fc0da991-2fc2-470c-aaa6-1c97d37fce1fpart-00048-7cb83802-e60e-458d-925c-7a58f4f0b8d4-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00000-1c0e436c-544e-41f3-9e92-b517469a4387-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databric6.1 (build 525e0192c899f018e5b4831607fa900167ecb064)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dremiopoc_yellow_tripdata_2019-01.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2022-08.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "ht-artifacts_part.5.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "classroom_part-0.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "numerai-public-datasets_latest_numerai_tournament_ids_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_data_755faf07-ea84-4f9d-aa80-42a05b24be69_92ceaced-3aa9-44b9-995d-de607410ce7b.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00007-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00004-42b852c0-d275-49be-8b3d-37348b159bd1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.3 (build f8dced182c4c1fbdec6ccb3185537b5a01e6ed6b)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_ef_account.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "plotly-tutorials_part.44.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "pangeo-data_data.557.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.4.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datasets_wls_day-62_2v.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00001-6d55c0d8-ee35-44ec-8d1a-9af7653522c6.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks6 (build bd2ebc87e42b3936ac673e1556fa10fb8358307a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "starburstdata_part-00001-e4d47a01-7e90-4312-8ea0-0d6ce2518967-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0004 (build 3f1503a988efb3fab95bbf90481dfe0b9575ae6c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datasets_wls_day-62_1v.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.39.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "testing-datasets_post_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000533.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00002-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_yellow_tripdata_2018-05.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_9f5c9343-f552-4f8c-8678-eb5e3054ed70part-00047-a65ecdc5-d612-4cf1-86e3-210dcb25c8ad-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "els-labs-website_part.3.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00006-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.12.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "dask-data_part.9.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00509-5c0a9c95-ef74-42af-83ee-282d43a9952f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_masterdata_cl.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "snorkel-public_d150.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ursa-qa_type_strings.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_1994-08-15-order_items.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "oedi-data-lake_setbacks_buildings.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "snorkel-public_d278.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00004-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00000-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_rogersdata.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.4.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "weclouddata_part-00455-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ursa-qa_sample_nested.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.4.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "huggingface-nlp_wikipedia-train-00033-of-00041.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "stoic-public_part-00201.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ubix_storage_part-r-00000-59070a7f-ac47-4b1a-921d-d79744f8cef1.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "cllimate_abcNewsWithoutEmbeds.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 11.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datasets-documentation_0112_part_00.parquet": {
+        "version": "1",
+        "created_by": "Amazon Redshift",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "altinity-clickhouse-data_2002.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "lz4_raw"
+        ]
+    },
+    "gx-ds_token_transfer_2018-10-03.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "saturn-public-data_part.183.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "fun-data_order_12.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "weclouddata_part-00556-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "2017edmfasatb_part-00001-307f271c-496c-4b4d-8bb4-93906cc9108f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "huggingface-nlp_wikipedia-train-00022-of-00041.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "huggingface-nlp_wikipedia-train-00019-of-00041.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "els-labs-website_part.4.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00060-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2630-2.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ubix_storage_part-r-00197-129a8192-b8f5-4b48-acb4-8f0ea31fedba.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "els-labs-website_part.2.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "cdn_part-00000-b378a237-6347-43dd-a197-b273dcbe1c74-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 815bcfa4a4aacf66d207b3dc692150d16b5740b9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2021-09.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "minus34_part-00018-1077fd86-16a4-4bcb-b39e-388d71ce954b-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000267.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "plotly-tutorials_part.48.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "sirius-public_data_ETH-USD_2019-09.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.4.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "nyc311_part.86.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "fusion-spark-bootcamp_fin_news_50000.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.4.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-public-data_part.40.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00001-tid-3862616569017912261-e0732dd8-21bb-4285-b27b-9c3d58741792-860734-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ai2-s2-research-public_metadata_50_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_yellow_tripdata_2018-11.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-01201-5c0a9c95-ef74-42af-83ee-282d43a9952f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_bcab66ffd91a42e5b36bd08aa361e2c7_000581.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "saturn-public-data_part.25.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "svobodnyi-bucket-dlya-vsego-mira_yellow_tripdata_2022-02.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "stoic-public_part-00738.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_fpg_nonpharma.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks9 (build cf6c823f85c3b69d49e1573e48e236148c709e82)",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00032-df5171f7-4cb0-4dd5-a095-7f6dd3646fd4-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00000-5707e66f-e890-4f1a-83ac-68605d7f8b6c-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "metadaddy-public_2015-11-1.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "training-ecommerce_part-00006-c1951958-98ae-4f2a-b7b4-2e3a69fcf403-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "starburstdata_part-00000-5ea20c9a-acaf-4ad4-97a2-5fd0a9e1f199-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0004 (build 3f1503a988efb3fab95bbf90481dfe0b9575ae6c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_2019-07-19.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "metadaddy-public_2017-05-1.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_2019-09-05.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "plotly-tutorials_part.22.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "snorkel-public_train_sampled.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_yellow_tripdata_2022-04.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-00055-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2625-2.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "weclouddata_part-00485-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00156-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2726-2.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-public-data_part.1.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "numerai-public-datasets-staging_latest_numerai_training_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "ai2-s2-research-public_metadata_39_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "snorkel-public_s4_train.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ht-artifacts_part.4.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "opteryx_orders.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "stoic-public_part-00087.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "testing-datasets_forum_containerOf_post_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.3.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "datasets-documentation_0010_part_00.parquet": {
+        "version": "1",
+        "created_by": "Amazon Redshift",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ubix_storage_part-r-00001-2eaf5bac-f6f7-421d-a2d9-9a6fb292b108.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00003-bb09eb5b-9151-4e56-9cb5-9622f855dace.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks6 (build bd2ebc87e42b3936ac673e1556fa10fb8358307a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_istshippingrequest_response.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.9.0 (build 38262e2c80015d0935dad20f8e18f2d6f9fbd03c)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "numerai-public-datasets-staging_latest_numerai_tournament_ids_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "2017edmfasatb_part-00000-307f271c-496c-4b4d-8bb4-93906cc9108f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.8.2 (build c6522788629e590a53eb79874b95f6c3ff11f16c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00066-tid-4284671256354485425-d300d01b-27d1-4239-8f01-b92b7879f0b7-7025-1.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00144-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "gx-ds_token_transfer_2018-05-04.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_bing_covid-19_data.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00138-df5171f7-4cb0-4dd5-a095-7f6dd3646fd4-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "geo-assets_DGGRID_ISEA7H_9_LAEA_sample_id_35.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "els-labs-website_part.1.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.6.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "rohini_object_33_4_2.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT"
+    },
+    "snorkel-public_d127278.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "rohini_object_33_4_1.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT"
+    },
+    "https:_part-00001-9b924dc4-dd75-4e06-b543-649c89db7a74-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0007 (build e85ac9c3b4fc850a9bd610103df62822c8f84ee4)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00003-42b852c0-d275-49be-8b3d-37348b159bd1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.3 (build f8dced182c4c1fbdec6ccb3185537b5a01e6ed6b)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ht-artifacts_part.0.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00000-259fdd8c-94ed-4c67-9acc-9fa561891f84-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000918.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ubix_storage_part-r-00021-129a8192-b8f5-4b48-acb4-8f0ea31fedba.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "cdn_part-00000-c7f41c9a-54d0-4712-8fb1-a6caf2fedf2b-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 815bcfa4a4aacf66d207b3dc692150d16b5740b9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "testing-datasets_comment_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00155-tid-7004447238299292029-9eac3eea-0e8b-4881-ad7f-3e82fcd63d5b-734-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "geo-assets_h3_8_LAEA_sample_id_37.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_7af4df09-89b4-40a2-8cc8-7ff0120ece3dpart-00080-f8ff14c4-7f6e-4168-874d-ece688394ae3-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "els-labs-website_part.5.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_yellow_tripdata_2022-03.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-02330-5c0a9c95-ef74-42af-83ee-282d43a9952f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2022-03.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "plotly-tutorials_part.36.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "stoic-public_part-00182.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "testing-datasets_forum_hasTag_tag_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00007-1077fd86-16a4-4bcb-b39e-388d71ce954b-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_rx01_errors_166.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "numerai-public-datasets_latest_numerai_example_predictions_data.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "weclouddata_part-00472-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_bcab66ffd91a42e5b36bd08aa361e2c7_000405.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00017-1025c171-eadd-45cb-a29c-41dcd7e09934-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_yellow_tripdata_2019-06.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "air-example-data-2_d9ef953e9a7347db8793f9e772357e68_000635.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00049-tid-6678076868030634615-c1d49804-39b0-47ea-a61d-ef8c241b90b3-1794-1.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.31.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "datarootsio_yellow_tripdata_2022-10.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-00015-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2585-1.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "starburstdata_part-00003-dfd8afba-fc01-4194-a5c2-fba55373e3d7-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0004 (build 3f1503a988efb3fab95bbf90481dfe0b9575ae6c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "starburstdata_part-00002-9a13c72f-3ec6-4688-ba6c-21a374f7179e-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0004 (build 3f1503a988efb3fab95bbf90481dfe0b9575ae6c)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "anaconda-training_part.41.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "ai2-s2-research-public_metadata_65_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00000-7c3922bc-7d01-4c87-8fda-7cf1dbf3830c-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "ai2-s2-research-public_metadata_4_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00037-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00002-42b852c0-d275-49be-8b3d-37348b159bd1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.3 (build f8dced182c4c1fbdec6ccb3185537b5a01e6ed6b)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "alasarr_000000000085.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "weclouddata_part-00473-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_dbecd01f-e375-44fb-8158-b6c608d1444fpart-00025-f930d258-d0aa-4a67-8bef-5d9f3fbf1418-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "coiled-datasets_part.28663.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ht-artifacts_part.2.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_2019-11-29.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "clickhouse-public-datasets_hits_8.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00329-54d61976-44a6-47bb-bc1c-81467011a5ef-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databric6.1 (build 525e0192c899f018e5b4831607fa900167ecb064)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "gx-ds_token_transfer_2019-01-19.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "coiled-datasets_part.12605.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_2019-07-05.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "metadaddy-public_2014-11-1.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_yellow_tripdata_2021-10.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "saturn-public-data_part.287.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00003-ce4a91db-0f04-4017-9ad2-3e395b1c971c.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1-databricks6 (build bd2ebc87e42b3936ac673e1556fa10fb8358307a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "datarootsio_yellow_tripdata_2021-11.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_2d352cd7-fde3-4f1a-b86a-c1aa3d7e5759part-00189-bd0c66d8-9e29-4646-bb24-347bf140aa7d-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "coiled-datasets_part.17587.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 5.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00096-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_341cb87a-0bd3-4ce7-91fb-618f7e3eb259part-00038-1e422c44-1d40-4945-9c6f-0bca6b803947-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "weclouddata_part-00481-d514924e-c699-41a7-aa07-ca369d73df9f-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build 0f9df43deffb88fd7f8666d63691842330f46bd9)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "testing-datasets_post_isLocatedIn_place_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "air-example-data-2_bcab66ffd91a42e5b36bd08aa361e2c7_000673.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ai2-s2-research-public_metadata_12_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00013-37f75a6a-a14b-4c12-adab-d7a46ce115fc-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "https:_part-00399-b545311e-dbaf-405b-bd68-29f2ac86501a-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0007 (build e85ac9c3b4fc850a9bd610103df62822c8f84ee4)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_bing_covid-19_data_40c8492c-9b3c-4c2d-9c7b-c85d716dbfa2.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "testing-datasets_post_hasCreator_person_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00141-tid-5923479634226188828-28a0fe10-f890-4d45-8570-2e57fd8236b3-189-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0007 (build e85ac9c3b4fc850a9bd610103df62822c8f84ee4)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_a206f479-b144-4ce5-a600-5de348e38608part-00146-6de4181b-1287-4fca-b348-a28f7705bd67-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dimajix-training_part-00043-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "clickhouse-public-datasets_hits_64.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ai2-s2-research-public_metadata_0_edges.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 8.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.11.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "https:_part-00088-tid-5923479634226188828-28a0fe10-f890-4d45-8570-2e57fd8236b3-136-1-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.0-databricks-0007 (build e85ac9c3b4fc850a9bd610103df62822c8f84ee4)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ht-artifacts_part.6.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "ubix_storage_part-r-00001-bcccdd52-dbda-498c-8a4b-c69b5496d7e0.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "snorkel-public_d75306.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "metadaddy-public_2016-02-1.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "minus34_part-00000-38ab916b-fb22-4fa6-b492-2c5ada036c58-c000.gz.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.1 (build 2a5c06c58fa987f85aa22170be14d927d5ff6e7d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "anaconda-training_part.17.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "clickhouse-public-datasets_part-00051-fc4d5cb6-e785-483a-9230-ce3f57bc777e-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.12.2 (build 77e30c8093386ec52c3cfa6c34b7ef3321322c94)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "https:_part-00073-tid-4753095944193949832-fee7e113-666d-4114-9fcb-bcd3046479f3-2643-1.c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1.2-databricks4 (build 0fde0614ce406457c34b127500b30addc60d3f0a)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "svobodnyi-bucket-dlya-vsego-mira_yellow_tripdata_2022-03.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "saturn-public-data_part.110.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "anaconda-training_part.13.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "saturn-public-data_part.44.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "dimajix-training_part-00057-22dee15e-8023-4e1f-b6ad-c681927af575-c000.snappy.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr version 1.10.1 (build a89df8f9932b6ef6633d06069e50c9b7970bebd1)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "saturn-public-data_part.160.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "metadaddy-public_2016-10-1.parquet": {
+        "version": "2",
+        "created_by": "parquet-cpp-arrow version 9.0.0",
+        "encoding": [
+            "rle_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "ursa-qa_sample_strings.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "saturn-public-data_part.282.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "air-example-data-2_bcab66ffd91a42e5b36bd08aa361e2c7_000692.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 6.0.1",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "svobodnyi-bucket-dlya-vsego-mira_yellow_tripdata_2022-04.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "gzip"
+        ]
+    },
+    "alasarr_000000000166.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 10.0.1",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "testing-datasets_forum_hasModerator_person_0_0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp-arrow version 7.0.0",
+        "encoding": [
+            "plain_dictionary"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "dask-data_part.15.parquet": {
+        "version": "1",
+        "created_by": "fastparquet-python version 1.0.0 (build 111)",
+        "encoding": [
+            "rle",
+            "plain"
+        ],
+        "page_type": [
+            "data_page_v1"
+        ],
+        "compression": [
+            null
+        ]
+    },
+    "stoic-public_part-00532.parquet": {
+        "version": "1",
+        "created_by": "parquet-mr (build 32c46643845ea8a705c35d4ec8fc654cc8ff816d)",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    },
+    "els-labs-website_part.0.parquet": {
+        "version": "1",
+        "created_by": "parquet-cpp version 1.5.1-SNAPSHOT",
+        "encoding": [
+            "plain_dictionary",
+            "plain"
+        ],
+        "page_type": [
+            "dictionary",
+            "data_page_v1"
+        ],
+        "compression": [
+            "snappy"
+        ]
+    }
+}

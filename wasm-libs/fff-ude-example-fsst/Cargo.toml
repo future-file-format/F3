@@ -1,0 +1,16 @@
+[package]
+name = "fff-ude-example-fsst"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-ude = { workspace = true }
+bytes = { workspace = true }
+arrow-buffer = { workspace = true }
+byteorder = { workspace = true }
+arrow-array = { workspace = true }
+bytemuck = { workspace = true }
+fsst-rs = { git = "https://github.com/dop-bot/fsst.git" }

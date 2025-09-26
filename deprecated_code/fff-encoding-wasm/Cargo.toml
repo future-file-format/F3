@@ -1,0 +1,16 @@
+[package]
+name = "fff-encoding-wasm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+fff-ude-wasm = { path = "../fff-ude-wasm" }
+arrow-array = { workspace = true }
+arrow-buffer = { workspace = true }
+bytes.workspace = true
+fff-core = { path = "../fff-core" }
+fff-encoding = { path = "../fff-encoding" }
+
+[dev-dependencies]
+rand = { workspace = true }
+fff-test-util = { path = "../fff-test-util" }

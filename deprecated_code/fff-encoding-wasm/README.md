@@ -1,0 +1,1 @@
+Sadly, because we cannot compile wasm codegen related code into wasm targets, the wasm decoder has to be a separated lib. Otherwise we cannot import `fff-encoding` crate to `fff-ude-example` to compile.

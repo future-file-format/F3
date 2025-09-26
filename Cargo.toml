@@ -1,0 +1,189 @@
+[workspace]
+members = [
+    "fff-bench",
+    "fff-core",
+    "fff-encoding",
+    # "fff-encoding-bench",
+    # "fff-encoding-wasm",
+    "fff-format",
+    "fff-poc",
+    "fff-test-util",
+    "fff-ude",
+    "wasm-libs/wasm-test-encoders",
+    "wasm-libs/fff-ude-example",
+    "wasm-libs/fff-ude-example-noop",
+    "wasm-libs/fff-ude-example-memory-test",
+    "wasm-libs/fff-ude-example2",
+    "wasm-libs/fff-ude-example-vortex",
+    # "wasm-libs/fff-ude-example-buff",
+    "wasm-libs/fff-ude-example-pco",
+    "wasm-libs/fff-ude-example-pco-real",
+    "wasm-libs/fff-ude-example-pco-real-encoder",
+    "wasm-libs/fff-ude-example-custom",
+    "wasm-libs/fff-ude-example-custom-encoder",
+    "wasm-libs/fff-ude-example-fsst",
+    "wasm-libs/fff-ude-example-lz4",
+    "wasm-libs/fff-ude-example-gzip",
+    "wasm-libs/fff-ude-example-zstd",
+    "wasm-libs/fff-ude-example-flsbp",
+    "wasm-libs/fff-ude-example-fff",
+    # "fff-ude-macros",
+    "fff-ude-wasm",
+    "wasm-libs/test-size",
+    "wasm-libs/test-wmemcheck",
+    "wasm-libs/adv-ude-fff",
+]
+resolver = "2"
+
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+description = "A research prototype for general, extensible and efficient columnar file format scaffolding."
+keywords = ["data", "format", "storage", "analysis", "scaffolding"]
+license = "MIT"
+repository = "https://github.com/future-file-format/fff-devel"
+readme = "README.md"
+categories = ["data-format"]
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace.dependencies]
+fff-encoding = { path = "./fff-encoding" }
+fff-ude = { path = "./fff-ude" }
+fff-core = { path = "./fff-core" }
+wasm-test-encoders = { path = "./wasm-libs/wasm-test-encoders" }
+# two versions in the fork: 0.20 and 0.25, 0.25 does not make a significant difference
+lance-file = { git = "https://github.com/XinyuZeng/lance.git", rev = "ff922b192422d5a4da8f3384e0a019925f4f339f" }
+lance-io = { git = "https://github.com/XinyuZeng/lance.git", rev = "ff922b192422d5a4da8f3384e0a019925f4f339f" }
+lance-core = { git = "https://github.com/XinyuZeng/lance.git", rev = "ff922b192422d5a4da8f3384e0a019925f4f339f" }
+lance-encoding = { git = "https://github.com/XinyuZeng/lance.git", rev = "ff922b192422d5a4da8f3384e0a019925f4f339f" }
+reqwest = { version = "0.12.7" }
+anyhow = "1.0.89"
+strum = "0.26.3"
+strum_macros = "0.26.4"
+log = "0.4.22"
+humansize = "2.1.3"
+chrono = "0.4.38"
+rand = "0.8.5"
+fs_extra = "1.3.0"
+pprof = { version = "0.13.0", features = ["flamegraph", "criterion"] }
+futures = "0.3.30"
+futures-executor = "0.3.30"
+futures-util = "0.3.30"
+clap = { version = "4.5.18", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["full"] }
+# need to be the same as the one in arrow-ipc 51.0.0
+flatbuffers = "24.3.25"
+flexbuffers = "2.0.0"
+# flatbuffers = "24.12.23"
+# flexbuffers = "24.12.23"
+flatc-rust = "0.2.0"
+# from arrow-rs
+arrow = "53.0.0"
+parquet = "53.0.0"
+parquet-mine = { package = "parquet", git = "https://github.com/dop-bot/arrow-rs.git" }
+arrow-array = "53.0.0"
+arrow-cast = "53.0.0"
+arrow-data = "53.0.0"
+arrow-schema = "53.0.0"
+arrow-buffer = "53.0.0"
+arrow-ipc = "53.0.0"
+arrow-json = "53.0.0"
+object_store = "0.11.0"
+serde = { version = "1.0.204", features = ["serde_derive"] }
+
+# wasm
+wasmtime = "28.0.0"
+wasi-common = "28.0.0"
+wasm-bindgen = "0.2.93"
+bytemuck = "1.18.0"
+tempfile = "3.13.0"
+bytes = { version = "1.7.2" }
+snafu = "0.8.5"
+criterion = { version = "0.5.1", features = ["html_reports"] }
+lazy_static = "1.4.0"
+byteorder = "1.5.0"
+
+# vortex 
+vortex-error = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-array = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-sampling-compressor = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-ipc = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-io = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-file = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-buffer = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-alp = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-fastlanes = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-runend = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-datetime-parts = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-roaring = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-fsst = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-dict = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-dtype = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+vortex-scalar = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+bench-vortex = { git = "https://github.com/XinyuZeng/vortex.git", rev = "c0d89a66cbaa542bd9aa277cfdf52f2728c4b37a" }
+
+# Wasm encodings for test
+pco = "0.4.1"
+lz4_flex = { version = "0.11", default-features = false }
+fastlanes = "0.1.8"
+
+# for dylib
+uniffi_core = "0.28.3"
+
+mimalloc = { version = "0.1.46" }
+zstd = "0.13.3"
+
+[profile.bench]
+opt-level = 3
+debug = true
+split-debuginfo = 'off'  # Platform-specific.
+strip = "none"
+debug-assertions = false
+overflow-checks = false
+lto = false
+incremental = false
+codegen-units = 16
+rpath = false
+
+[profile.release.package.fff-ude-example-vortex]
+opt-level = 's'
+
+[profile.release.package.fff-ude-example]
+opt-level = 's'
+
+[profile.release.package.fff-ude-example2]
+opt-level = 's'
+
+[profile.wizard]
+inherits = "release"
+opt-level = "z"
+debug = false
+strip = true
+lto = true
+codegen-units = 1
+incremental = false
+panic = "abort"
+
+[profile.opt-size]
+inherits = "release"
+opt-level = "z"
+debug = false
+strip = true
+lto = true
+codegen-units = 1
+incremental = false
+panic = "abort"
+
+[profile.opt-size-lvl3]
+inherits = "release"
+opt-level = 3
+debug = false
+strip = true
+lto = true
+codegen-units = 1
+incremental = false
+panic = "abort"
+
+# [profile.release]
+# lto = 'fat'

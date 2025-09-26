@@ -1,0 +1,12 @@
+[package]
+name = "fff-ude-example-custom-encoder"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-test-encoders = { path = "../wasm-test-encoders" }
+arrow-array = { workspace = true, features = ["ffi"] }
+uniffi_core.workspace = true

@@ -1,0 +1,10 @@
+/target
+.vscode
+*.log
+__pycache__
+.idea
+build
+data_*
+
+# for storing aws credentials
+.env 

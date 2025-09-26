@@ -1,0 +1,2 @@
+[target.'cfg(x86_64)']
+rustflags = ["-C", "target-cpu=native"]

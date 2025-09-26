@@ -1,0 +1,4 @@
+[toolchain]
+# channel = "stable"
+channel = "nightly-2025-02-24"
+targets = ["x86_64-unknown-linux-gnu", "wasm32-wasip1"]

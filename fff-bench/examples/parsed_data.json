@@ -1,0 +1,4653 @@
+[
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-epmccooccurrences.fff",
+        "res": [
+            {
+                "col_name": "anns",
+                "list_size": 777440,
+                "avg_child_size": 129165248.0,
+                "num_child": 4
+            },
+            {
+                "col_name": "tags",
+                "list_size": 12000,
+                "avg_child_size": 20851957.333333332,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "gharchive-PushEvent.fff",
+        "res": [
+            {
+                "col_name": "commits",
+                "list_size": 1461216,
+                "avg_child_size": 12232352.0,
+                "num_child": 8
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-failedcooccurrences.fff",
+        "res": [
+            {
+                "col_name": "organisms",
+                "list_size": 1759968,
+                "avg_child_size": 20074080.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "matches",
+                "list_size": 638048,
+                "avg_child_size": 6476806.4,
+                "num_child": 5
+            }
+        ]
+    },
+    {
+        "file_name": "amazon-berkeley-objects-listings.fff",
+        "res": [
+            {
+                "col_name": "brand",
+                "list_size": 315600,
+                "avg_child_size": 95653.33333333333,
+                "num_child": 3
+            },
+            {
+                "col_name": "bullet_point",
+                "list_size": 377232,
+                "avg_child_size": 10245328.0,
+                "num_child": 3
+            },
+            {
+                "col_name": "color",
+                "list_size": 341200,
+                "avg_child_size": 52784.0,
+                "num_child": 2
+            },
+            {
+                "col_name": "standardized_values",
+                "list_size": 340496,
+                "avg_child_size": 327376.0,
+                "num_child": 2
+            },
+            {
+                "col_name": "item_name",
+                "list_size": 44176,
+                "avg_child_size": 5211877.333333333,
+                "num_child": 3
+            },
+            {
+                "col_name": "alternate_representations",
+                "list_size": 11024,
+                "avg_child_size": 10682.666666666666,
+                "num_child": 3
+            },
+            {
+                "col_name": "item_weight",
+                "list_size": 319312,
+                "avg_child_size": 71632.0,
+                "num_child": 6
+            },
+            {
+                "col_name": "material",
+                "list_size": 156176,
+                "avg_child_size": 83344.0,
+                "num_child": 3
+            },
+            {
+                "col_name": "model_name",
+                "list_size": 248720,
+                "avg_child_size": 139578.66666666666,
+                "num_child": 3
+            },
+            {
+                "col_name": "model_number",
+                "list_size": 319312,
+                "avg_child_size": 625200.0,
+                "num_child": 2
+            },
+            {
+                "col_name": "product_type",
+                "list_size": 3216,
+                "avg_child_size": 97136.0,
+                "num_child": 2
+            },
+            {
+                "col_name": "other_image_id",
+                "list_size": 364560,
+                "avg_child_size": 5552912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "item_keywords",
+                "list_size": 442000,
+                "avg_child_size": 8860368.0,
+                "num_child": 3
+            },
+            {
+                "col_name": "node",
+                "list_size": 341072,
+                "avg_child_size": 474405.3333333333,
+                "num_child": 3
+            },
+            {
+                "col_name": "model_year",
+                "list_size": 41232,
+                "avg_child_size": 4816.0,
+                "num_child": 2
+            },
+            {
+                "col_name": "style",
+                "list_size": 133968,
+                "avg_child_size": 137765.33333333334,
+                "num_child": 3
+            },
+            {
+                "col_name": "color_code",
+                "list_size": 64912,
+                "avg_child_size": 83664.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "pattern",
+                "list_size": 35344,
+                "avg_child_size": 11770.666666666666,
+                "num_child": 3
+            },
+            {
+                "col_name": "item_shape",
+                "list_size": 33168,
+                "avg_child_size": 8933.333333333334,
+                "num_child": 3
+            },
+            {
+                "col_name": "fabric_type",
+                "list_size": 49040,
+                "avg_child_size": 29370.666666666668,
+                "num_child": 3
+            },
+            {
+                "col_name": "product_description",
+                "list_size": 37136,
+                "avg_child_size": 684474.6666666666,
+                "num_child": 3
+            },
+            {
+                "col_name": "finish_type",
+                "list_size": 22416,
+                "avg_child_size": 6992.0,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-clinvar_summary_variants-gene_specific_summary.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-clinvar_summary_variants-hgvs4variation.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-gnomad-sites.fff",
+        "res": [
+            {
+                "col_name": "alleles",
+                "list_size": 10720,
+                "avg_child_size": 1843936.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "filters",
+                "list_size": 566048,
+                "avg_child_size": 63520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC",
+                "list_size": 10720,
+                "avg_child_size": 516960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF",
+                "list_size": 1350176,
+                "avg_child_size": 2139104.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.popmax",
+                "list_size": 1345568,
+                "avg_child_size": 195296.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95_popmax",
+                "list_size": 1345568,
+                "avg_child_size": 1357472.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-nfe",
+                "list_size": 10720,
+                "avg_child_size": 328864.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-nfe",
+                "list_size": 1352736,
+                "avg_child_size": 1347488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 287392.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-afr-XY",
+                "list_size": 1353312,
+                "avg_child_size": 1188256.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 329440.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-nfe-XY",
+                "list_size": 1352736,
+                "avg_child_size": 1347488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 179872.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-eas-XY",
+                "list_size": 1356640,
+                "avg_child_size": 295136.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2",
+                "list_size": 10720,
+                "avg_child_size": 485472.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2",
+                "list_size": 1350752,
+                "avg_child_size": 2013216.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-mid",
+                "list_size": 10720,
+                "avg_child_size": 89888.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-mid",
+                "list_size": 1364896,
+                "avg_child_size": 127456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-sas",
+                "list_size": 10720,
+                "avg_child_size": 199456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-sas",
+                "list_size": 1354336,
+                "avg_child_size": 476640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 263648.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-amr-XY",
+                "list_size": 1353568,
+                "avg_child_size": 706208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-XY",
+                "list_size": 10720,
+                "avg_child_size": 361184.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-XY",
+                "list_size": 1352800,
+                "avg_child_size": 1578208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 112160.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-asj-XY",
+                "list_size": 1355168,
+                "avg_child_size": 233184.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-oth",
+                "list_size": 10720,
+                "avg_child_size": 198368.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-oth",
+                "list_size": 1356128,
+                "avg_child_size": 248224.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 82272.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-mid-XY",
+                "list_size": 1366560,
+                "avg_child_size": 112672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 199712.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-sas-XY",
+                "list_size": 1354336,
+                "avg_child_size": 483616.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-fin",
+                "list_size": 10720,
+                "avg_child_size": 170720.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-fin",
+                "list_size": 1356768,
+                "avg_child_size": 247840.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 242336.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-amr-XY",
+                "list_size": 1353696,
+                "avg_child_size": 615456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-raw",
+                "list_size": 10720,
+                "avg_child_size": 574240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-raw",
+                "list_size": 277088,
+                "avg_child_size": 2134240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-asj",
+                "list_size": 10720,
+                "avg_child_size": 109408.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-asj",
+                "list_size": 1355360,
+                "avg_child_size": 235808.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-raw",
+                "list_size": 10720,
+                "avg_child_size": 475296.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-raw",
+                "list_size": 410272,
+                "avg_child_size": 1487456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-ami",
+                "list_size": 10720,
+                "avg_child_size": 43104.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-ami",
+                "list_size": 1397856,
+                "avg_child_size": 53152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-eas",
+                "list_size": 10720,
+                "avg_child_size": 168800.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-eas",
+                "list_size": 1355168,
+                "avg_child_size": 328352.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-amr",
+                "list_size": 10720,
+                "avg_child_size": 255584.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-amr",
+                "list_size": 1353824,
+                "avg_child_size": 642912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-sas",
+                "list_size": 10720,
+                "avg_child_size": 199520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-sas",
+                "list_size": 1354336,
+                "avg_child_size": 480096.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 196384.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-fin-XY",
+                "list_size": 1356064,
+                "avg_child_size": 281056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 343200.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-nfe-XY",
+                "list_size": 1352800,
+                "avg_child_size": 1642272.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-oth",
+                "list_size": 10720,
+                "avg_child_size": 189216.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-oth",
+                "list_size": 1356320,
+                "avg_child_size": 218592.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-ami",
+                "list_size": 10720,
+                "avg_child_size": 75104.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-ami",
+                "list_size": 1359520,
+                "avg_child_size": 90144.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-XY",
+                "list_size": 10720,
+                "avg_child_size": 508064.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-XY",
+                "list_size": 1350304,
+                "avg_child_size": 2346400.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-sas",
+                "list_size": 10720,
+                "avg_child_size": 202080.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-sas",
+                "list_size": 1354976,
+                "avg_child_size": 388128.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-sas",
+                "list_size": 10720,
+                "avg_child_size": 199648.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-sas",
+                "list_size": 1354336,
+                "avg_child_size": 483616.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 80928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-ami-XY",
+                "list_size": 1359520,
+                "avg_child_size": 92640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-eas",
+                "list_size": 10720,
+                "avg_child_size": 179872.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-eas",
+                "list_size": 1355040,
+                "avg_child_size": 349152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-XY",
+                "list_size": 10720,
+                "avg_child_size": 482016.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-XY",
+                "list_size": 1350752,
+                "avg_child_size": 1809760.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-ami",
+                "list_size": 10720,
+                "avg_child_size": 75360.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-ami",
+                "list_size": 1359520,
+                "avg_child_size": 93472.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro",
+                "list_size": 10720,
+                "avg_child_size": 487200.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro",
+                "list_size": 1350368,
+                "avg_child_size": 2122848.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 183840.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-nfe-XY",
+                "list_size": 1353952,
+                "avg_child_size": 399456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-eas",
+                "list_size": 10720,
+                "avg_child_size": 179872.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-eas",
+                "list_size": 1356640,
+                "avg_child_size": 295136.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 194336.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-oth-XY",
+                "list_size": 1356128,
+                "avg_child_size": 256992.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-XY",
+                "list_size": 10720,
+                "avg_child_size": 485472.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-XY",
+                "list_size": 1350752,
+                "avg_child_size": 2220896.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-fin",
+                "list_size": 10720,
+                "avg_child_size": 196384.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-fin",
+                "list_size": 1356064,
+                "avg_child_size": 281056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-afr",
+                "list_size": 10720,
+                "avg_child_size": 230304.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-afr",
+                "list_size": 1354272,
+                "avg_child_size": 505504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-mid",
+                "list_size": 10720,
+                "avg_child_size": 83296.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-mid",
+                "list_size": 1366560,
+                "avg_child_size": 115424.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 199392.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-sas-XY",
+                "list_size": 1354336,
+                "avg_child_size": 477024.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed",
+                "list_size": 10720,
+                "avg_child_size": 482272.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed",
+                "list_size": 1350752,
+                "avg_child_size": 1809504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 77920.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-ami-XY",
+                "list_size": 1359584,
+                "avg_child_size": 91232.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 229536.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-afr-XY",
+                "list_size": 1354272,
+                "avg_child_size": 505504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-amr",
+                "list_size": 10720,
+                "avg_child_size": 242272.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-amr",
+                "list_size": 1353696,
+                "avg_child_size": 615456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-amr",
+                "list_size": 10720,
+                "avg_child_size": 162656.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-amr",
+                "list_size": 1354528,
+                "avg_child_size": 328992.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-raw",
+                "list_size": 10720,
+                "avg_child_size": 622496.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-raw",
+                "list_size": 10720,
+                "avg_child_size": 2276064.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-mid",
+                "list_size": 10720,
+                "avg_child_size": 84576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-mid",
+                "list_size": 1364768,
+                "avg_child_size": 121376.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 108448.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-asj-XY",
+                "list_size": 1355360,
+                "avg_child_size": 234144.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-afr",
+                "list_size": 10720,
+                "avg_child_size": 284256.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-afr",
+                "list_size": 1353504,
+                "avg_child_size": 1136928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 170720.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-fin-XY",
+                "list_size": 1356768,
+                "avg_child_size": 248608.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-afr",
+                "list_size": 10720,
+                "avg_child_size": 350176.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-afr",
+                "list_size": 1353248,
+                "avg_child_size": 1480032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 199520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-sas-XY",
+                "list_size": 1354336,
+                "avg_child_size": 476640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 85152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-mid-XY",
+                "list_size": 1364576,
+                "avg_child_size": 118304.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 189216.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-oth-XY",
+                "list_size": 1356320,
+                "avg_child_size": 218592.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-fin",
+                "list_size": 10720,
+                "avg_child_size": 162144.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-fin",
+                "list_size": 1358880,
+                "avg_child_size": 227040.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 190880.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-eas-XY",
+                "list_size": 1354976,
+                "avg_child_size": 344032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-ami",
+                "list_size": 10720,
+                "avg_child_size": 80928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-ami",
+                "list_size": 1359520,
+                "avg_child_size": 92640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-XY",
+                "list_size": 10720,
+                "avg_child_size": 516576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-XY",
+                "list_size": 1350176,
+                "avg_child_size": 2139488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 168672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-eas-XY",
+                "list_size": 1355168,
+                "avg_child_size": 328352.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 206112.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-eas-XY",
+                "list_size": 1355744,
+                "avg_child_size": 295008.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-eas",
+                "list_size": 10720,
+                "avg_child_size": 191392.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-eas",
+                "list_size": 1354976,
+                "avg_child_size": 344032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 115488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-asj-XY",
+                "list_size": 1355104,
+                "avg_child_size": 236576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 74080.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-mid-XY",
+                "list_size": 1370656,
+                "avg_child_size": 108896.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 196384.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-fin-XY",
+                "list_size": 1356064,
+                "avg_child_size": 279520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-nfe",
+                "list_size": 10720,
+                "avg_child_size": 261344.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-nfe",
+                "list_size": 1353120,
+                "avg_child_size": 1010720.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-amr",
+                "list_size": 10720,
+                "avg_child_size": 263712.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-amr",
+                "list_size": 1353568,
+                "avg_child_size": 706208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-ami",
+                "list_size": 10720,
+                "avg_child_size": 78304.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-ami",
+                "list_size": 1359584,
+                "avg_child_size": 93728.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-mid",
+                "list_size": 10720,
+                "avg_child_size": 89504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-mid",
+                "list_size": 1365536,
+                "avg_child_size": 120352.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 83552.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-mid-XY",
+                "list_size": 1364896,
+                "avg_child_size": 127456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 161504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-amr-XY",
+                "list_size": 1354528,
+                "avg_child_size": 328992.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 78048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-ami-XY",
+                "list_size": 1359520,
+                "avg_child_size": 92640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-afr",
+                "list_size": 10720,
+                "avg_child_size": 350752.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-afr",
+                "list_size": 1353248,
+                "avg_child_size": 1411232.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-sas",
+                "list_size": 10720,
+                "avg_child_size": 199776.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-sas",
+                "list_size": 1354336,
+                "avg_child_size": 477024.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-fin",
+                "list_size": 10720,
+                "avg_child_size": 195616.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-fin",
+                "list_size": 1356192,
+                "avg_child_size": 278560.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 112608.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-asj-XY",
+                "list_size": 1355168,
+                "avg_child_size": 233568.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 89504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-mid-XY",
+                "list_size": 1365536,
+                "avg_child_size": 122976.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-raw",
+                "list_size": 10720,
+                "avg_child_size": 660512.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-raw",
+                "list_size": 10720,
+                "avg_child_size": 2290912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 191456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-eas-XY",
+                "list_size": 1354976,
+                "avg_child_size": 344032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-mid",
+                "list_size": 10720,
+                "avg_child_size": 74400.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-mid",
+                "list_size": 1370656,
+                "avg_child_size": 112288.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 320672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-nfe-XY",
+                "list_size": 1352928,
+                "avg_child_size": 1266464.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-sas",
+                "list_size": 10720,
+                "avg_child_size": 180640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-sas",
+                "list_size": 1354528,
+                "avg_child_size": 383072.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-sas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-eas",
+                "list_size": 10720,
+                "avg_child_size": 206112.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-eas",
+                "list_size": 1355744,
+                "avg_child_size": 295008.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-mid",
+                "list_size": 10720,
+                "avg_child_size": 85152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-mid",
+                "list_size": 1364576,
+                "avg_child_size": 120864.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-mid",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 198368.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-oth-XY",
+                "list_size": 1356128,
+                "avg_child_size": 248224.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-nfe",
+                "list_size": 10720,
+                "avg_child_size": 343456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-nfe",
+                "list_size": 1352800,
+                "avg_child_size": 1642272.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 199776.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-sas-XY",
+                "list_size": 1354336,
+                "avg_child_size": 480096.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-asj",
+                "list_size": 10720,
+                "avg_child_size": 116640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-asj",
+                "list_size": 1356256,
+                "avg_child_size": 178848.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-asj-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 255968.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-amr-XY",
+                "list_size": 1353824,
+                "avg_child_size": 642912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-asj",
+                "list_size": 10720,
+                "avg_child_size": 115488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-asj",
+                "list_size": 1355104,
+                "avg_child_size": 236576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 116640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-asj-XY",
+                "list_size": 1356256,
+                "avg_child_size": 171488.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-ami",
+                "list_size": 10720,
+                "avg_child_size": 53280.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-ami",
+                "list_size": 1395744,
+                "avg_child_size": 56672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-ami",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-raw",
+                "list_size": 10720,
+                "avg_child_size": 544480.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-raw",
+                "list_size": 277088,
+                "avg_child_size": 2087776.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 179424.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-eas-XY",
+                "list_size": 1355040,
+                "avg_child_size": 349152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer",
+                "list_size": 10720,
+                "avg_child_size": 507424.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer",
+                "list_size": 1350304,
+                "avg_child_size": 2346528.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 40416.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-ami-XY",
+                "list_size": 1397856,
+                "avg_child_size": 53152.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 283360.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-afr-XY",
+                "list_size": 1353504,
+                "avg_child_size": 1136928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 202208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-sas-XY",
+                "list_size": 1354976,
+                "avg_child_size": 388128.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-fin",
+                "list_size": 10720,
+                "avg_child_size": 174240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-fin",
+                "list_size": 1356704,
+                "avg_child_size": 244384.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-oth",
+                "list_size": 10720,
+                "avg_child_size": 191136.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-oth",
+                "list_size": 1356128,
+                "avg_child_size": 259552.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-asj",
+                "list_size": 10720,
+                "avg_child_size": 112160.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-asj",
+                "list_size": 1355168,
+                "avg_child_size": 231200.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-afr",
+                "list_size": 10720,
+                "avg_child_size": 283040.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-afr",
+                "list_size": 1353696,
+                "avg_child_size": 1097504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 282848.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-afr-XY",
+                "list_size": 1353696,
+                "avg_child_size": 1097504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-eas",
+                "list_size": 10720,
+                "avg_child_size": 190304.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-eas",
+                "list_size": 1354976,
+                "avg_child_size": 344032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-eas",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 84576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-mid-XY",
+                "list_size": 1364768,
+                "avg_child_size": 120928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-mid-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-fin-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-amr",
+                "list_size": 10720,
+                "avg_child_size": 263520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-amr",
+                "list_size": 1353568,
+                "avg_child_size": 671264.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 350432.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-afr-XY",
+                "list_size": 1353248,
+                "avg_child_size": 1411232.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 196064.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-fin-XY",
+                "list_size": 1356192,
+                "avg_child_size": 278560.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 263136.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-amr-XY",
+                "list_size": 1353632,
+                "avg_child_size": 685408.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 71328.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-asj-XY",
+                "list_size": 1379552,
+                "avg_child_size": 100640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-asj-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 174240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-fin-XY",
+                "list_size": 1356704,
+                "avg_child_size": 255520.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 263392.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-amr-XY",
+                "list_size": 1353568,
+                "avg_child_size": 671264.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-ami-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks",
+                "list_size": 10720,
+                "avg_child_size": 360928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks",
+                "list_size": 1352800,
+                "avg_child_size": 1578208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-oth",
+                "list_size": 10720,
+                "avg_child_size": 127776.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-oth",
+                "list_size": 1360416,
+                "avg_child_size": 177696.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 336928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-nfe-XY",
+                "list_size": 1352736,
+                "avg_child_size": 1668768.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 180256.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-sas-XY",
+                "list_size": 1354528,
+                "avg_child_size": 383072.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-oth",
+                "list_size": 10720,
+                "avg_child_size": 194592.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-oth",
+                "list_size": 1356128,
+                "avg_child_size": 256160.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-oth",
+                "list_size": 10720,
+                "avg_child_size": 182496.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-oth",
+                "list_size": 1357664,
+                "avg_child_size": 210208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-oth",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 261536.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-nfe-XY",
+                "list_size": 1353120,
+                "avg_child_size": 1019168.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-nfe",
+                "list_size": 10720,
+                "avg_child_size": 320672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-nfe",
+                "list_size": 1352928,
+                "avg_child_size": 1268640.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-nfe",
+                "list_size": 10720,
+                "avg_child_size": 183584.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-nfe",
+                "list_size": 1353952,
+                "avg_child_size": 399456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 127968.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-oth-XY",
+                "list_size": 1360416,
+                "avg_child_size": 188000.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 162144.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-fin-XY",
+                "list_size": 1358880,
+                "avg_child_size": 224800.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-fin-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-asj",
+                "list_size": 10720,
+                "avg_child_size": 112608.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-asj",
+                "list_size": 1355168,
+                "avg_child_size": 231456.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-amr",
+                "list_size": 10720,
+                "avg_child_size": 263200.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-amr",
+                "list_size": 1353632,
+                "avg_child_size": 685408.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-amr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_v2-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 78240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_v2-ami-XY",
+                "list_size": 1359520,
+                "avg_child_size": 90912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_v2-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-raw",
+                "list_size": 10720,
+                "avg_child_size": 583904.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-raw",
+                "list_size": 277088,
+                "avg_child_size": 2260448.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-raw",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-afr",
+                "list_size": 10720,
+                "avg_child_size": 289248.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-afr",
+                "list_size": 1353312,
+                "avg_child_size": 1197920.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-afr",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 53280.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-ami-XY",
+                "list_size": 1395744,
+                "avg_child_size": 56672.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-ami-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 190752.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-oth-XY",
+                "list_size": 1356128,
+                "avg_child_size": 250016.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 350176.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-afr-XY",
+                "list_size": 1353248,
+                "avg_child_size": 1633504.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_cancer-fin",
+                "list_size": 10720,
+                "avg_child_size": 196384.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_cancer-fin",
+                "list_size": 1356064,
+                "avg_child_size": 281056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_cancer-fin",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-asj",
+                "list_size": 10720,
+                "avg_child_size": 72992.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-asj",
+                "list_size": 1379552,
+                "avg_child_size": 99360.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-asj",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_topmed-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 182496.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_topmed-oth-XY",
+                "list_size": 1357664,
+                "avg_child_size": 210208.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_topmed-oth-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-mid-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-controls_and_biobanks-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-controls_and_biobanks-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-controls_and_biobanks-oth-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-non_neuro-XY",
+                "list_size": 10720,
+                "avg_child_size": 486368.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-non_neuro-XY",
+                "list_size": 1350368,
+                "avg_child_size": 2122976.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-non_neuro-XY",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC-nfe",
+                "list_size": 10720,
+                "avg_child_size": 337056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF-nfe",
+                "list_size": 1352736,
+                "avg_child_size": 1670688.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt-nfe",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC_popmax",
+                "list_size": 1345568,
+                "avg_child_size": 376288.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AN_popmax",
+                "list_size": 1345568,
+                "avg_child_size": 864608.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF_popmax",
+                "list_size": 1345568,
+                "avg_child_size": 1951968.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.nhomalt_popmax",
+                "list_size": 1345568,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 340576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-amr-XY",
+                "list_size": 10720,
+                "avg_child_size": 340832.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 280288.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-sas-XY",
+                "list_size": 10720,
+                "avg_child_size": 279648.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-nfe-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-sas",
+                "list_size": 10720,
+                "avg_child_size": 280288.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-sas",
+                "list_size": 10720,
+                "avg_child_size": 279648.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-amr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-sas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-XY",
+                "list_size": 10720,
+                "avg_child_size": 1657888.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-XY",
+                "list_size": 10720,
+                "avg_child_size": 1667168.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-eas",
+                "list_size": 10720,
+                "avg_child_size": 257056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-eas",
+                "list_size": 10720,
+                "avg_child_size": 262048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-amr",
+                "list_size": 10720,
+                "avg_child_size": 340576.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-amr",
+                "list_size": 10720,
+                "avg_child_size": 340832.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-afr",
+                "list_size": 10720,
+                "avg_child_size": 718048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-afr",
+                "list_size": 10720,
+                "avg_child_size": 706656.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 257056.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-eas-XY",
+                "list_size": 10720,
+                "avg_child_size": 262048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95",
+                "list_size": 10720,
+                "avg_child_size": 1657888.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99",
+                "list_size": 10720,
+                "avg_child_size": 1479264.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-afr-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 718048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-afr-XY",
+                "list_size": 10720,
+                "avg_child_size": 706656.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-eas-XX",
+                "list_size": 9440,
+                "avg_child_size": 4320.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 902944.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-nfe-XY",
+                "list_size": 10720,
+                "avg_child_size": 825824.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf95-nfe",
+                "list_size": 10720,
+                "avg_child_size": 902944.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.faf99-nfe",
+                "list_size": 10720,
+                "avg_child_size": 825824.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_het_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 5600.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_het_n_smaller",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_het_n_larger",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_hom_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 1400544.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_hom_n_smaller",
+                "list_size": 10720,
+                "avg_child_size": 241632.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.age_hist_hom_n_larger",
+                "list_size": 10720,
+                "avg_child_size": 147680.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_FS",
+                "list_size": 1427040,
+                "avg_child_size": 1521312.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_MQ",
+                "list_size": 10720,
+                "avg_child_size": 1511072.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_MQRankSum",
+                "list_size": 810080,
+                "avg_child_size": 492832.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_pab_max",
+                "list_size": 597984,
+                "avg_child_size": 377248.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_QD",
+                "list_size": 10720,
+                "avg_child_size": 1888864.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_ReadPosRankSum",
+                "list_size": 810080,
+                "avg_child_size": 495712.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_SOR",
+                "list_size": 10720,
+                "avg_child_size": 2135904.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.InbreedingCoeff",
+                "list_size": 10720,
+                "avg_child_size": 1346592.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_VQSLOD",
+                "list_size": 10720,
+                "avg_child_size": 1715872.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AS_culprit",
+                "list_size": 10720,
+                "avg_child_size": 260960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.gq_hist_alt_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 4392736.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.gq_hist_all_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 14213216.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.dp_hist_alt_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 1610912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.dp_hist_alt_n_larger",
+                "list_size": 10720,
+                "avg_child_size": 15328.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.dp_hist_all_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 14398048.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.dp_hist_all_n_smaller",
+                "list_size": 10720,
+                "avg_child_size": 4960.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.dp_hist_all_n_larger",
+                "list_size": 10720,
+                "avg_child_size": 52704.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.ab_hist_alt_bin_freq",
+                "list_size": 10720,
+                "avg_child_size": 6240.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.vep",
+                "list_size": 1501664,
+                "avg_child_size": 45376736.0,
+                "num_child": 1
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-failedmatches.fff",
+        "res": [
+            {
+                "col_name": "organisms",
+                "list_size": 1802208,
+                "avg_child_size": 72397472.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "co-occurrence",
+                "list_size": 650912,
+                "avg_child_size": 1134560.0,
+                "num_child": 10
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-matches.fff",
+        "res": [
+            {
+                "col_name": "organisms",
+                "list_size": 1736032,
+                "avg_child_size": 24408416.0,
+                "num_child": 1
+            }
+        ]
+    },
+    {
+        "file_name": "hep-adl-ethz-Run2012B_SingleMu.fff",
+        "res": [
+            {
+                "col_name": "Muon",
+                "list_size": 1425120,
+                "avg_child_size": 1764480.0,
+                "num_child": 16
+            },
+            {
+                "col_name": "Electron",
+                "list_size": 337696,
+                "avg_child_size": 341557.3333333333,
+                "num_child": 15
+            },
+            {
+                "col_name": "Tau",
+                "list_size": 1566560,
+                "avg_child_size": 2801867.6363636362,
+                "num_child": 22
+            },
+            {
+                "col_name": "Photon",
+                "list_size": 509280,
+                "avg_child_size": 585219.5555555555,
+                "num_child": 9
+            },
+            {
+                "col_name": "Jet",
+                "list_size": 1502048,
+                "avg_child_size": 5341179.428571428,
+                "num_child": 7
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-gtex_8-rnaseqcv1_1_9_gene_tpm.fff",
+        "res": []
+    },
+    {
+        "file_name": "gharchive-CommitCommentEvent.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-gtex_8-rsemv1_3_0_transcript_expected_count.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-gtex_8-rsemv1_3_0_transcript_tpm.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-cooccurrences.fff",
+        "res": [
+            {
+                "col_name": "organisms",
+                "list_size": 1748960,
+                "avg_child_size": 17033824.0,
+                "num_child": 1
+            }
+        ]
+    },
+    {
+        "file_name": "aws-public-blockchain-btc-transactions.fff",
+        "res": [
+            {
+                "col_name": "outputs",
+                "list_size": 256480,
+                "avg_child_size": 9138368.0,
+                "num_child": 8
+            },
+            {
+                "col_name": "inputs",
+                "list_size": 1459488,
+                "avg_child_size": 11226001.777777778,
+                "num_child": 9
+            },
+            {
+                "col_name": "txinwitness",
+                "list_size": 2831392,
+                "avg_child_size": 43143925.333333336,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-clinvar_summary_variants-submission_summary.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-public-blockchain-eth-logs.fff",
+        "res": [
+            {
+                "col_name": "topics",
+                "list_size": 397216,
+                "avg_child_size": 15753824.0,
+                "num_child": 1
+            }
+        ]
+    },
+    {
+        "file_name": "gharchive-MemberEvent.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-interaction.fff",
+        "res": []
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-diseasetophenotype.fff",
+        "res": [
+            {
+                "col_name": "evidence",
+                "list_size": 24784,
+                "avg_child_size": 408360.0,
+                "num_child": 8
+            },
+            {
+                "col_name": "modifiers",
+                "list_size": 13328,
+                "avg_child_size": 6288.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "onset",
+                "list_size": 26320,
+                "avg_child_size": 7162.666666666667,
+                "num_child": 3
+            },
+            {
+                "col_name": "references",
+                "list_size": 336272,
+                "avg_child_size": 401210.6666666667,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-thousandgenomes_dragen-var_partby_samples.fff",
+        "res": [
+            {
+                "col_name": "alleles",
+                "list_size": 186784,
+                "avg_child_size": 2271584.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "filters",
+                "list_size": 67872,
+                "avg_child_size": 16608.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AC",
+                "list_size": 196000,
+                "avg_child_size": 90592.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "info.AF",
+                "list_size": 196000,
+                "avg_child_size": 104032.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "AD",
+                "list_size": 186784,
+                "avg_child_size": 1087392.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "AF",
+                "list_size": 60192,
+                "avg_child_size": 1073120.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "FIR2",
+                "list_size": 186784,
+                "avg_child_size": 922912.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "F2R1",
+                "list_size": 186784,
+                "avg_child_size": 925984.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "GP",
+                "list_size": 403168,
+                "avg_child_size": 6560544.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "GT.alleles",
+                "list_size": 10720,
+                "avg_child_size": 328352.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "MB",
+                "list_size": 10720,
+                "avg_child_size": 1812832.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "PL",
+                "list_size": 403168,
+                "avg_child_size": 2169632.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "PRI",
+                "list_size": 403168,
+                "avg_child_size": 4959328.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "SB",
+                "list_size": 10720,
+                "avg_child_size": 1815456.0,
+                "num_child": 1
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-aotfelasticsearch.fff",
+        "res": [
+            {
+                "col_name": "facet_therapeuticAreas",
+                "list_size": 177824,
+                "avg_child_size": 778720.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "facet_classes",
+                "list_size": 1078944,
+                "avg_child_size": 39562.666666666664,
+                "num_child": 3
+            },
+            {
+                "col_name": "facet_tractability_smallmolecule",
+                "list_size": 1301216,
+                "avg_child_size": 409120.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "facet_tractability_antibody",
+                "list_size": 1325984,
+                "avg_child_size": 553248.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "facet_tractability_protac",
+                "list_size": 1317664,
+                "avg_child_size": 432416.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "facet_tractability_othermodalities",
+                "list_size": 21472,
+                "avg_child_size": 8928.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "facet_reactome",
+                "list_size": 1549664,
+                "avg_child_size": 2342773.3333333335,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "gharchive-GollumEvent.fff",
+        "res": [
+            {
+                "col_name": "pages",
+                "list_size": 21936,
+                "avg_child_size": 2890059.4285714286,
+                "num_child": 7
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-interactionevidence.fff",
+        "res": [
+            {
+                "col_name": "xrefs",
+                "list_size": 38624,
+                "avg_child_size": 7904.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "participantDetectionMethodA",
+                "list_size": 28320,
+                "avg_child_size": 30368.0,
+                "num_child": 3
+            },
+            {
+                "col_name": "participantDetectionMethodB",
+                "list_size": 27936,
+                "avg_child_size": 34890.666666666664,
+                "num_child": 3
+            }
+        ]
+    },
+    {
+        "file_name": "aws-roda-hcls-datalake-opentargets_latest-knowndrugsaggregated.fff",
+        "res": [
+            {
+                "col_name": "urls",
+                "list_size": 104240,
+                "avg_child_size": 3799216.0,
+                "num_child": 3
+            },
+            {
+                "col_name": "ancestors",
+                "list_size": 694896,
+                "avg_child_size": 4066992.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "targetClass",
+                "list_size": 592368,
+                "avg_child_size": 151856.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "tradeNames",
+                "list_size": 660208,
+                "avg_child_size": 9014064.0,
+                "num_child": 1
+            },
+            {
+                "col_name": "synonyms",
+                "list_size": 694896,
+                "avg_child_size": 10254576.0,
+                "num_child": 1
+            }
+        ]
+    }
+]

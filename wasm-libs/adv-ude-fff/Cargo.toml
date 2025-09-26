@@ -1,0 +1,19 @@
+[package]
+name = "adv-ude-fff"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-ude = { workspace = true }
+fff-encoding = { workspace = true }
+arrow-buffer = { workspace = true }
+bytes.workspace = true
+vortex-sampling-compressor.workspace = true
+vortex-array.workspace = true
+vortex-scalar.workspace = true
+datafusion-substrait = "44"
+prost = { version = "0.13.1", default-features = false }
+roaring = "*"

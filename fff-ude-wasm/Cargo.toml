@@ -1,0 +1,23 @@
+[package]
+name = "fff-ude-wasm"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+wasmtime = { workspace = true, features = ["incremental-cache", "wmemcheck"] }
+wasi-common = { workspace = true }
+anyhow = { workspace = true }
+async-trait = "0.1"
+base64 = "0.22"
+once_cell = "1"
+arrow-buffer = { workspace = true }
+arrow-array = { workspace = true }
+
+[dev-dependencies]
+fff-encoding = { path = "../fff-encoding" }
+fff-core = { path = "../fff-core" }
+arrow-array = { workspace = true }
+bytes = { workspace = true }
+# genawaiter = "0.99"
+fff-test-util = { path = "../fff-test-util" }
+wasm-test-encoders = { workspace = true }

@@ -1,0 +1,39 @@
+name: Unit Test
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  linux-test:
+    name: linux-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Cache build
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+      - name: Install dependencies
+        shell: bash
+        run: |
+          bash scripts/setup_debian.sh
+          # source ~/.profile
+          # echo "export PATH=\$PATH:\$HOME/.zig/zig-latest" >> $GITHUB_ENV
+          # echo "source \$HOME/.local/emsdk/emsdk_env.sh" >> $GITHUB_ENV
+      # - name: Test fff-bench with all features
+      #   run: cargo test -p fff-bench --all-features
+      - name: Test fff-format with all features
+        run: cargo test -p fff-format --all-features
+      - name: Test fff-poc with all features
+        run: cargo test -p fff-poc --all-features
+      - name: Test fff-poc with default features
+        run: cargo test -p fff-poc

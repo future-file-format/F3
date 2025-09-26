@@ -1,0 +1,30 @@
+[package]
+name = "fff-ude-example-vortex"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-encoding = { workspace = true }
+fff-ude = { workspace = true }
+fff-core = { workspace = true }
+bytes = { workspace = true }
+arrow-buffer = { workspace = true }
+vortex-array = { workspace = true }
+vortex-runend = { workspace = true }
+vortex-ipc = { workspace = true }
+byteorder = { workspace = true }
+arrow-array = { workspace = true, features = ["ffi"] }
+vortex-fsst = { workspace = true }
+vortex-alp = { workspace = true }
+wasm-bindgen = "0.2"
+wee_alloc = "0.4.5"
+
+
+[features]
+default = []
+runend = []
+fsst = []
+alp = []

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="150mm"
+   viewBox="0 0 210 150"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   sodipodi:docname="f3-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.7349537"
+     inkscape:cx="395.94331"
+     inkscape:cy="525.88346"
+     inkscape:window-width="1200"
+     inkscape:window-height="976"
+     inkscape:window-x="182"
+     inkscape:window-y="53"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="linearGradient1">
+      <stop
+         style="stop-color:#931964;stop-opacity:1;"
+         offset="0"
+         id="stop3" />
+      <stop
+         style="stop-color:#c04067;stop-opacity:0;"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1-1">
+      <stop
+         style="stop-color:#931964;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#e378c5;stop-opacity:0;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="107.01871"
+       y1="19.805212"
+       x2="107.01871"
+       y2="152.70967"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.2903653,0,0,1.2903653,-28.751762,-41.925727)" />
+  </defs>
+  <g
+     inkscape:label="图层 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:167.312px;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:url(#linearGradient2);stroke-width:0.871416"
+       x="102.7326"
+       y="114.97058"
+       id="text1"
+       transform="scale(0.93757812,1.0665778)"><tspan
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:167.312px;font-family:'Airstream NF';-inkscape-font-specification:'Airstream NF, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:url(#linearGradient2);stroke-width:0.871416"
+         x="102.7326"
+         y="114.97058"
+         sodipodi:role="line">F3</tspan></text>
+  </g>
+</svg>

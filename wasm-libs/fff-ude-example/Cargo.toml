@@ -1,0 +1,13 @@
+[package]
+name = "fff-ude-example"
+version.workspace = true
+edition.workspace = true
+
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-encoding = { workspace = true }
+fff-ude = { workspace = true }
+bytes = { workspace = true }

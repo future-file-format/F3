@@ -1,0 +1,35 @@
+[package]
+name = "fff-encoding"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+arrow = { workspace = true }
+arrow-array = { workspace = true }
+arrow-schema = { workspace = true }
+arrow-buffer = { workspace = true }
+flexbuffers = { workspace = true }
+serde = { workspace = true }
+byteorder = "1.5.0"
+fastlanes = { workspace = true }
+bytemuck = { workspace = true }
+bytes.workspace = true
+fff-core = { path = "../fff-core" }
+fff-format = { path = "../fff-format" }
+tempfile = { workspace = true }
+rkyv = { version = "0.7.45", features = ["validation"] }
+
+# vortex deps
+vortex-array = { workspace = true }
+vortex-sampling-compressor = { workspace = true }
+vortex-ipc = { workspace = true }
+vortex-buffer = { workspace = true }
+vortex-alp = { workspace = true }
+vortex-fastlanes = { workspace = true }
+vortex-runend = { workspace = true }
+vortex-datetime-parts = { workspace = true }
+vortex-roaring = { workspace = true }
+vortex-dict = { workspace = true }
+vortex-dtype = { workspace = true }
+vortex-scalar = { workspace = true }
+futures = "0.3.31"

@@ -1,0 +1,14 @@
+[package]
+name = "fff-ude-example-fff"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-ude = { workspace = true }
+wasm-test-encoders = { path = "../wasm-test-encoders" }
+# wee_alloc = "0.4.5"
+# talc = "4.4.2"
+# spin = "0.9.8"

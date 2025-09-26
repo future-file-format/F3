@@ -1,0 +1,22 @@
+[package]
+name = "fff-ude-example-buff"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-ude = { path = "../fff-ude" }
+fff-core = { path = "../fff-core" }
+bytes = { workspace = true }
+arrow-buffer = { workspace = true }
+byteorder = { workspace = true }
+arrow-array = { workspace = true }
+buff = { git = "https://github.com/Tranway1/buff.git" }
+
+[features]
+default = []
+runend = []
+fsst = []
+alp = []

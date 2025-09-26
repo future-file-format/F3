@@ -1,0 +1,3 @@
+dataset,enable_iounit_checksum_throughput,disable_iounit_checksum_throughput
+lineitem_duckdb_double.parquet,1417462.29,1444158.95
+hits_8M.parquet,153335.19,153378.01

@@ -1,0 +1,29 @@
+[package]
+name = "wasm-test-encoders"
+version.workspace = true
+edition.workspace = true
+
+
+[dependencies]
+lz4_flex = { workspace = true }
+fff-ude = { workspace = true }
+arrow-buffer = { workspace = true }
+byteorder = { workspace = true }
+arrow-array = { workspace = true, features = ["ffi"] }
+arrow-ipc = { workspace = true }
+arrow-schema = { workspace = true }
+pco = { workspace = true }
+fastlanes = { workspace = true }
+bytemuck = { workspace = true }
+fff-encoding = { workspace = true }
+bytes = { workspace = true }
+vortex-sampling-compressor = { workspace = true }
+flate2 = { version = "1.0.17" }
+zstd = "0.13"
+# safer-ffi = "0.1.13"
+uniffi_core.workspace = true
+
+[dev-dependencies]
+fff-core = { workspace = true }
+rand = "0.8"
+rand_distr = "0.4"

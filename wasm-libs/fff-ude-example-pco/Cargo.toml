@@ -1,0 +1,11 @@
+[package]
+name = "fff-ude-example-pco"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+fff-ude = { workspace = true }
+wasm-test-encoders = { path = "../wasm-test-encoders" }

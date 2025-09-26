@@ -1,0 +1,121 @@
+[package]
+name = "fff-bench"
+version.workspace = true
+edition.workspace = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bench-vortex = { workspace = true }
+vortex-array = { workspace = true }
+reqwest = { workspace = true }
+anyhow = { workspace = true, features = ["backtrace"] }
+strum = { workspace = true }
+strum_macros = { workspace = true }
+log = { workspace = true }
+humansize = { workspace = true }
+fs_extra = { workspace = true }
+arrow = { workspace = true }
+futures = { workspace = true }
+clap = { workspace = true }
+wasmtime = { workspace = true }
+wasi-common = { workspace = true }
+bytemuck = { workspace = true }
+# higher wasmer version causes conflicts on wat version with wasmtime
+wasmer = { version = "4.2.2" }
+fff-poc = { path = "../fff-poc" }
+fff-core = { path = "../fff-core" }
+fff-format = { path = "../fff-format" }
+tempfile = { workspace = true }
+flatbuffers = { workspace = true }
+
+arrow-array = { workspace = true }
+vortex-sampling-compressor = { workspace = true }
+vortex-fastlanes = { workspace = true }
+vortex-io = { workspace = true }
+vortex-file = { workspace = true }
+vortex-dtype = { workspace = true }
+rand = { workspace = true }
+futures-executor = { workspace = true }
+futures-util = { workspace = true }
+serde_json = "1.0"
+object_store = { workspace = true, features = ["aws"] }
+pprof = { workspace = true, features = ["flamegraph"] }
+parquet = { workspace = true, features = ["object_store"] }
+parquet-mine = { workspace = true }
+itertools = "0.13.0"
+# for testing lance
+lance-file = { workspace = true }
+lance-io = { workspace = true }
+lance-core = { workspace = true }
+lance-encoding = { workspace = true }
+# for testing ORC
+orc-rust = "0.5.0"
+# for testing btrblocks
+# dictscope-bench = { path = "../../dict-scope/dictscope-bench" }
+serde = { workspace = true }
+bincode = "1.3"
+
+tokio = { workspace = true, features = ["full"] }
+lazy_static = "1.4.0"
+
+csv = "1.3"
+simplelog = "0.12.2"
+
+arrow-json = { workspace = true }
+bytes = { workspace = true }
+
+fff-encoding = { path = "../fff-encoding" }
+fff-test-util = { path = "../fff-test-util" }
+fff-ude-wasm = { path = "../fff-ude-wasm" }
+uuid = "1.8.0"
+
+[dev-dependencies]
+arrow-buffer = { workspace = true }
+arrow-data = { workspace = true }
+fff-core = { path = "../fff-core" }
+fff-ude = { path = "../fff-ude" }
+criterion = { workspace = true, features = ["csv_output"] }
+log = { workspace = true }
+pretty_assertions = "1"
+pprof = { workspace = true }
+sysinfo = { version = "0.31.4" }
+wasi-common = { workspace = true }
+anyhow = { workspace = true }
+wasmtime = { workspace = true, features = ["winch"] }
+vortex-sampling-compressor = { workspace = true }
+wasm-test-encoders = { workspace = true }
+rand = "0.8"
+rand_distr = "0.4"
+
+datafusion = { version = "44.0.0", default-features = false }
+datafusion-common = "44"
+datafusion-execution = "44"
+datafusion-expr = "44"
+datafusion-physical-expr = "44"
+datafusion-physical-plan = "44"
+datafusion-substrait = "44"
+prost = "0.13.1"
+roaring = "*"
+
+[[bin]]
+name = "bench_wasm_decode"
+
+# [[bin]]
+# name = "footer"
+
+[[bench]]
+name = "bench"
+harness = false
+
+[[bench]]
+name = "memory_cost"
+harness = false
+
+[[bench]]
+name = "multi_thread"
+harness = false
+
+[features]
+default = ["fff-poc/default"]
+list-offsets-pushdown = ["fff-poc/list-offsets-pushdown"]

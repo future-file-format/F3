@@ -1,0 +1,75 @@
+[package]
+name = "fff-poc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arrow = { workspace = true, features = ["ffi"] }
+arrow-array = { workspace = true }
+arrow-schema = { workspace = true }
+arrow-buffer = { workspace = true }
+arrow-ipc = { workspace = true }
+arrow-json = { workspace = true }
+parquet = { workspace = true }
+
+fff-format = { path = "../fff-format" }
+fff-core = { path = "../fff-core" }
+fff-encoding = { path = "../fff-encoding" }
+fff-ude-wasm = { path = "../fff-ude-wasm" }
+fff-test-util = { path = "../fff-test-util" }
+# wasmtime = { workspace = true }
+# wasmer = { version = "4.2.2" }
+# wasi-common = { workspace = true }
+# wasmer-wasix = { version = "*" }
+lance-datagen = { path = "../third_party/lance-datagen" }
+lazy_static = "1.4.0"
+base64 = "0.22"
+flatbuffers = { workspace = true }
+tempfile = { workspace = true }
+xxhash-rust = { version = "0.8.10", features = ["xxh64"] }
+bytes.workspace = true
+snafu = { workspace = true }
+log = { workspace = true }
+byteorder = { workspace = true }
+object_store = { workspace = true }
+futures = { workspace = true }
+tokio = { workspace = true, features = ["full"] }
+vortex-sampling-compressor = { workspace = true }
+semver = "1.0.25"
+mimalloc = { workspace = true }
+lz4_flex = { workspace = true }
+zstd = { workspace = true }
+
+# FFI that makes using dylib work
+libloading = "0.8"
+uniffi_core.workspace = true
+rand = { workspace = true }
+itertools = "0.13.0"
+
+[dev-dependencies]
+bench-vortex = { workspace = true }
+arrow-array = { workspace = true }
+vortex-array = { workspace = true }
+vortex-sampling-compressor = { workspace = true }
+vortex-fastlanes = { workspace = true }
+vortex-ipc = { workspace = true }
+vortex-dtype = { workspace = true }
+futures-executor = { workspace = true }
+futures-util = { workspace = true }
+clap = { workspace = true }
+csv = "1.3.0"
+serde_json = "1.0"
+object_store = { workspace = true, features = ["aws"] }
+pprof = { workspace = true, features = ["flamegraph"] }
+parquet = { workspace = true, features = ["object_store"] }
+itertools = "0.13.0"
+rstest = "0.23.0"
+rstest_reuse = "0.7.0"
+wasm-test-encoders.workspace = true
+
+[features]
+default = []
+# default = ["list-offsets-pushdown"]
+list-offsets-pushdown = []

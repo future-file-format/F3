@@ -1,0 +1,17 @@
+# https://doc.rust-lang.org/cargo/reference/unstable.html#per-package-target
+cargo-features = ["per-package-target"]
+[package]
+name = "fff-wasm"
+version.workspace = true
+edition.workspace = true
+# forced-target = "wasm32-wasip1"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+# wasm-bindgen = { workspace = true }
+# fastlanez = { workspace = true }
+
+[build-dependencies]
+anyhow = { workspace = true }

@@ -1,0 +1,277 @@
+/// Initial format definition of F3, subject to change in the future.
+namespace fff.flatbuf;
+
+/// ----------------------------------------------------------------------
+/// File Definition. Postscript is not defined by FlatBuf, but directly written by the writer.
+///
+
+// # File Layout
+// Each column inside a row group can have multiple IOUnits (Chunk), which do not need to be
+// contiguous. Each IOUnit can have multiple EncUnits. IOUnit is the unit for I/O during writing.
+// We plan to enable multi-layered IOUnits during reading in the future. (i.e., finer grained IO than IOUnit)
+// EncUnit is the unit for switch top-level encoding algorithm for a physical column, thus contiguous by nature.
+// EncUnit, by default, has a fixed number of values (e.g., 64k or 8k, although may change according to your need), 
+// so the encoded size of an EncUnit may vary.
+// Each EncUnit optionally holds a pointer to the WASM binary that decodes the data.
+// It is the reader's responsibility to cache the WASM binary to avoid multiple reads.
+//
+// ├───────────────────────────────────┤
+// | Row Group 0                      |
+// | IOUnits                          |
+// |   IOUnit 0, EncUnit 0*           | (For historical reasons, IOUnit is called Chunk in many places of this file)
+// |   ...                            |
+// |   IOUnit 0, EncUnit I0_N*        |
+// |   IOUnit 1, EncUnit I1_N*        |
+// |   ...                            |
+// |   IOUnit IN, EncUnit IN_N*       |
+// ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┤
+// |   ...                            |
+// ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┤
+// | Row Group R                      |
+// |   ...                            |
+// ├───────────────────────────────────┤
+// | WASM Binaries
+// |   WASM 0                         |
+// |   WASM 1                         |
+// |   ...                            |
+// |   WASM WN                        |
+// ├───────────────────────────────────┤
+// | |A| Row Group Metadata 0         |
+// |  Column Metadata 0               |
+// |   IOUnit Metadata 0              |
+// |    offset                        |
+// |    size                          |
+// |    EncUnit0.encoding: WASM 0     |
+// |     ...                          |
+// |  Column Metadata C               |
+// |     ...                          |
+// ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┤
+// |     ...                          |
+// ├ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┤
+// | Row Group Metadata R             |
+// |     ...                          |
+// ├───────────────────────────────────┤
+// | Statistics (FlatBuf)             |
+// | |B| Todo or stored out-of-band   |
+// |     ...                          |
+// ├───────────────────────────────────┤
+// | Footer (FlatBuf)                 |
+// | arrow_schema as IPC Message      |
+// | row_groups:                      |
+// |   row_counts                     |
+// |   offsets                        |
+// |   sizes                          |
+// |row_group_metadatas: Point to |A| |  /// store offset to each column's metadata for projection
+// | optional_sections: Point to |B|  |
+// | encoding_versions                |
+// | shared_dictionary_table          |
+// ├───────────────────────────────────┤
+// | Postscript (in little endian)    |
+// |   u32: Metadata size             |  /// to be used with a single I/O fetch. This size = file size exclude actual data and postscript.
+// |   u32: Footer size               |
+// |   u8:  Footer compression type   |
+// |   u8:  Checksum type             |
+// |   u64: Data checksum             |  /// checksum of the actual data, in the order of columns in schema. 
+// |   u64: Schema checksum           |  /// checksum of the schema, calculated based on serialized IPC message.
+// |   u16: Major version             |
+// |   u16: Minor version             |
+// |   "F3"                           |
+// ├───────────────────────────────────┤
+//
+//
+
+/// Compression type for metadata.
+enum CompressionType:uint8 {
+  Uncompressed = 0,
+  Zstd = 1,
+  Lz4 = 2,
+}
+
+/// Act as a pointer to another section in the file.
+table MetadataSection {
+  offset: uint64;
+  size: uint32;
+  compression_type: CompressionType;
+}
+
+/// What to store in optional metadata sections is decided by the users.
+/// E.g., store UUIDs for columns to support schema evolution; zonemaps for predicate pushdown.
+/// Right now, we only use it to store WASM binaries.
+table OptionalMetadataSections {
+  names: [string];
+  offsets: [uint64];
+  sizes: [uint32];
+  compression_types: [CompressionType];
+}
+
+enum EncodingType:uint8 {
+  // PLAIN = 0,    // DEPRECATED
+  // NULLABLE = 1, // DEPRECATED
+  CASCADE = 0, // Default Vortex
+  /// Custom WASM binary. 
+  CUSTOM_WASM = 255,
+}
+
+table SemVer {
+  major: uint64;
+  minor: uint64;
+  patch: uint64;
+}
+
+table WASMEncoding {
+  wasm_id: uint32; // unique id for the wasm decoding binary stored in-place in the file.
+  mini_encunit_sizes: [uint32]; // no use currently
+}
+
+/// Info about who created the file/Wasm
+table Colophon {
+  /// The application and its version and checksum
+  /// e.g., Rust-writer version 0.0.1 e2c16f4809da81f5d282fb57547091f0471c22a6
+  /// e.g., rustc versin 1.83 d6c8169c1 (for Wasm)
+  created_by: string;
+  /// Hardware information about the writer
+  /// e.g., x86_64, ARM
+  hardware: string; // FIXME: privacy conceron?
+}
+
+table URL {
+  url: string;
+}
+
+table WASMBinaries {
+  wasm_binaries: [MetadataSection];
+  lib_urls: [URL];  // URL to the lib of each Wasm Binary, if any.
+  // colophons: [Colophon];
+}
+
+/// Encoding used at the EncUnit level.
+/// 1. If the encoding is supported by the reader (e.g., PLAIN), the reader can directly read the data.
+/// 2. If the encoding is not supported by the reader, but a wasm_encoding is provided, reader can use WASM
+///  to decode the data.
+/// 3. If the encoding is CUSTOM_WASM, which means custom encoding by user that is not supported in any version of the file
+///  (even writer), then the reader must use the wasm_encoding to decode the data.
+table Encoding {
+  type: EncodingType;
+  wasm_encoding: WASMEncoding;
+}
+
+/// The case where dictionary is shared outside of this chunk.
+/// Note that the dictionary may be shared across different row groups or different columns.
+table SharedDictionary {
+  shared_dictionary_idx: uint32;
+}
+
+/// The dictionary is stored within this chunk.
+/// The EncUnits of dictionary indices are flushed first, followed by the dictionary items.
+table LocalDictionary {
+  dictionary_encunit_idxs: [uint32];
+}
+
+/// Directly use EncUnit level encoding, no shared state.
+table NoDictionary {
+}
+
+union DictionaryEncoding {
+  NoDictionary,
+  LocalDictionary,
+  SharedDictionary,
+}
+
+/// Data inside a EncUnit shares the same encoding. Default num_rows for a EncUnit is 64k values.
+/// Finer data access below EncUnit (e.g., a 2k vector) is possible according to the encoding.
+table EncUnit {
+  size: uint32;
+  encoding: Encoding;
+  num_rows: uint32;
+  compression: CompressionType;
+}
+
+/// For now, Chunk == IOUnit.
+/// A chunk contains data for the same column.
+/// A single Chunk can have multiple EncUnits. 
+/// The EncUnits are contiguous.
+table Chunk {
+  offset: uint64;
+  size: uint32;
+  num_rows: uint64;
+  encoding: DictionaryEncoding;
+  encunits: [EncUnit];
+  /// Added during revision
+  checksum: uint64 = null;
+}
+
+/// There can be many Chunks for a column inside a RowGroup.
+/// And they do not need to be contiguous.
+table ColumnMetadata {
+  column_chunks: [Chunk];
+}
+
+table RowGroups {
+  row_counts: [uint32];
+  offsets: [uint64];
+  sizes: [uint32];
+  row_group_metadatas: [RowGroupMetadata]; 
+}
+
+table RowGroupMetadata {
+  col_metadatas: [MetadataSection];     // Point to the ColumnMetadata
+}
+
+enum LogicalId:uint8 {
+  FLAT = 0,
+  LIST = 1,
+  STRUCT = 2,
+  LIST_OF_STRUCT_OF_PRIMITIVE = 3,
+}
+
+/// Logical encoding ids
+table LogicalTree {
+  id: LogicalId;
+  children: [LogicalTree];
+}
+
+/// This table stores pointers to dictionary chunks,
+/// and indicies of chunks each shared dictionary contains
+table SharedDictionaryTable {
+  dictionary_chunks: [Chunk];
+  dictionary_positions: [DictionaryPosition];
+  dictionary_schema: [ubyte];
+}
+
+table DictionaryPosition {
+  chunk_ids: [uint32];
+}
+
+/// Maps an encoding type to its semantic version
+table EncodingVersion {
+  encoding_type: EncodingType;
+  version: SemVer (required);
+}
+
+table Footer {
+  /// Serialized Arrow Schema, in IPC Message Format.
+  /// The logical type in Arrow's schema does not represent the physical layout.
+  /// The reader should be able to handle the physical encodings according 
+  /// to the metadata in row_groups.
+  schema: [ubyte];
+
+  /// Colophon of the file: who created the file in what environment.
+  // colophon: Colophon;
+
+  /// The logical tree which allows flexibility other than Length & Presence.
+  logical_tree: LogicalTree;
+
+  row_groups: RowGroups; // Only trivial metadata is stored in-band. Column metadata is stored out-of-band.
+
+  /// This is like a key-value metadata table.
+  /// This "WASMBinaries" optional metadata section is storing the WASM Binaries.
+  optional_sections: OptionalMetadataSections;
+
+  /// Mapping between encoding types and their semantic versions.
+  encoding_versions: [EncodingVersion];
+
+  /// The table to shared dictionary IOUnits and IOUnit IDs each shared dictionary contains
+  shared_dictionary_table: SharedDictionaryTable;
+}
+
+root_type Footer;
