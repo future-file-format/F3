@@ -1240,9 +1240,14 @@ impl BenchmarkDataset for BenchmarkDatasets {
                     BenchmarkDatasets::CFB(_) => {
                         write_csv_as_parquet(f, output_path, ",", "", opt.rg_size, false)
                     }
-                    BenchmarkDatasets::PBI(_) => {
-                        write_csv_as_parquet(f, output_path, "|", "null", opt.rg_size, opt.is_dict_scope)
-                    }
+                    BenchmarkDatasets::PBI(_) => write_csv_as_parquet(
+                        f,
+                        output_path,
+                        "|",
+                        "null",
+                        opt.rg_size,
+                        opt.is_dict_scope,
+                    ),
                     BenchmarkDatasets::LAION(_) => {
                         unreachable!()
                     }

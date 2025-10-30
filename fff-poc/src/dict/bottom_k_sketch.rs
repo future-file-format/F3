@@ -9,12 +9,12 @@ const K: usize = 2048;
 const M: usize = 3;
 // Total complexity is O(M(n log K + c^2 K)), where n is #elements, c is #columns
 
-lazy_static!(
+lazy_static! {
     static ref COEFFS: Vec<(u64, u64)> = {
         let mut rng = rand::thread_rng();
         (0..M).map(|_| (rng.gen(), rng.gen())).collect()
     };
-);
+}
 
 pub struct BottomKSketch {
     /// A heap to store the bottom K hash values
