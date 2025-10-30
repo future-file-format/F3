@@ -143,17 +143,17 @@ impl FlatEncUnit {
         self.encoding_tree.serialize(&mut s).unwrap();
         let encoding_tree = s.take_buffer();
         write.write_u32::<LittleEndian>(encoding_tree.len() as u32)?;
-        write.write(&encoding_tree)?;
+        write.write_all(&encoding_tree)?;
         let written_len =
             4 + self.buffer_sizes.as_ref().unwrap().len() * 4 + 4 + encoding_tree.len();
-        write.write(&ZEROS[..padding_size(written_len, ALIGNMENT)])?;
+        write.write_all(&ZEROS[..padding_size(written_len, ALIGNMENT)])?;
         for buf in self.buffers.iter() {
             for buffer in buf.iter() {
                 write.write_all(buffer.as_ref())?;
             }
         }
         let written_len = write.stream_position()? - start;
-        write.write(&ZEROS[..padding_size(written_len as usize, ALIGNMENT)])?;
+        write.write_all(&ZEROS[..padding_size(written_len as usize, ALIGNMENT)])?;
         Ok(write)
     }
 
@@ -185,7 +185,7 @@ impl FlatEncUnit {
         Ok(Self {
             encoding_tree,
             buffer_sizes: None,
-            buffers: buffers.into_iter().map(|b| DataBuffer::Dense(b)).collect(),
+            buffers: buffers.into_iter().map(DataBuffer::Dense).collect(),
         })
     }
 

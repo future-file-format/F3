@@ -103,7 +103,7 @@ pub unsafe fn scalar_wrapper(
 //     pub len: usize,
 // }
 
-/// This does not work because if returning a struct, wasm FFI simply requires one extra input param of the address of the struct.
+// /// This does not work because if returning a struct, wasm FFI simply requires one extra input param of the address of the struct.
 // pub unsafe fn scalar_wrapper_v2(function: ScalarDecode, ptr: *const u8, len: usize) -> ResSlice {
 //     let input = std::slice::from_raw_parts(ptr, len);
 //     match call_primitive(function, input) {
@@ -174,11 +174,11 @@ fn call_string(function: StringDecode, input_bytes: &[u8]) -> Result<Vec<Box<[u8
     Ok(output_batch)
 }
 
-/// Drop the array. Currently no use because we use ArrayData to transfer data
-///
-/// # Safety
-///
-/// `array` must be valid pointers.
+// /// Drop the array. Currently no use because we use ArrayData to transfer data
+// ///
+// /// # Safety
+// ///
+// /// `array` must be valid pointers.
 // #[no_mangle]
 // pub unsafe extern "C" fn array_drop(array: *mut ArrayRef) {
 //     drop(Box::from_raw(array));
@@ -275,6 +275,7 @@ fn call_generalv2(
     let iter = function(input_bytes)?;
     Ok(Box::new(BufferIter { iter }))
 }
+
 /// Get the next Buffer from the iterator.
 ///
 /// The output Buffer is written to the buffer pointed to by `out`.
@@ -284,7 +285,6 @@ fn call_generalv2(
 ///
 /// `iter` and `out` must be valid pointers.
 #[no_mangle]
-
 pub unsafe extern "C" fn buffer_iterator_next(
     iter: *mut BufferIter,
     out: *mut CSlice,

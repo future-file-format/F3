@@ -1,4 +1,4 @@
-use std::{collections::HashMap, u64};
+use std::collections::HashMap;
 
 use arrow_schema::DataType;
 use fff_format::File::fff::flatbuf::CompressionType;
@@ -147,10 +147,7 @@ impl FileWriterOptionsBuilder {
     /// Finalizes the configuration and returns immutable writer properties struct.
     pub fn build(self) -> FileWriterOptions {
         // TODO: better way of separting built-in wasm and custom extension wasm
-        assert!(
-            self.write_built_in_wasm && self.custom_encoding_options.len() == 0
-                || !self.write_built_in_wasm
-        );
+        assert!(!self.write_built_in_wasm || self.custom_encoding_options.is_empty());
         FileWriterOptions {
             iounit_size: self.iounit_size,
             encoding_unit_len: self.encoding_unit_len,
@@ -241,6 +238,10 @@ impl CustomEncodingOptions {
 
     pub fn len(&self) -> usize {
         self.wasms.len()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.wasms.len() == 0
     }
 
     pub fn into_context(self) -> WASMWritingContext {

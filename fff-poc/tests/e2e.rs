@@ -35,9 +35,8 @@ fn read_parquet_file(file_path: impl AsRef<Path>, batch_size: usize) -> Vec<Reco
 /// This testing function assumes that the input Array is always String, not StringView
 /// And the output Array may be StringView, and thus will convert input to StringView for compare.
 fn array_equal(i: &Arc<dyn Array>, o: &Arc<dyn Array>) {
-    if i.len() != o.len() {
-        assert!(false);
-    }
+    assert!(i.len() != o.len());
+
     if o.data_type().is_primitive() || matches!(o.data_type(), DataType::Binary | DataType::Utf8) {
         assert_eq!(i, o)
     } else if o.as_byte_view_opt::<StringViewType>().is_some() {
@@ -68,7 +67,7 @@ fn array_equal(i: &Arc<dyn Array>, o: &Arc<dyn Array>) {
     } else if let DataType::List(_) = o.data_type() {
         let i = i.as_list::<i32>();
         let o = o.as_list::<i32>();
-        array_equal(&i.values(), &o.values());
+        array_equal(i.values(), o.values());
     } else {
         unimplemented!()
     }
@@ -99,11 +98,10 @@ fn test_read<R: Reader + Clone>(
             take_record_batch(&input_single_batch, &UInt64Array::from(indexes)).unwrap()
         }
     };
-    for (_i, (i_col, o_col)) in input_single_batch
+    for (i_col, o_col) in input_single_batch
         .columns()
         .iter()
         .zip(output_single_batch.columns().iter())
-        .enumerate()
     {
         // println!("{i}");
         // if i == 8 {
@@ -485,10 +483,11 @@ async fn test_object_store() {
     let mut file = std::fs::OpenOptions::new()
         .write(true)
         .create(true)
+        .truncate(true)
         .open(
             Path::new(env!("CARGO_MANIFEST_DIR"))
                 .join("data")
-                .join(&file_name),
+                .join(file_name),
         )
         .unwrap();
     write_batches(
@@ -500,10 +499,11 @@ async fn test_object_store() {
         AmazonS3Builder::from_env()
             .with_url("s3://future-file-format/")
             .with_retry({
-                let mut res = object_store::RetryConfig::default();
-                res.retry_timeout = std::time::Duration::from_secs(10);
-                res.max_retries = 1;
-                res
+                object_store::RetryConfig {
+                    retry_timeout: std::time::Duration::from_secs(10),
+                    max_retries: 1,
+                    ..Default::default()
+                }
             })
             .build()
             .unwrap(),
@@ -522,10 +522,11 @@ async fn test_s3() {
         AmazonS3Builder::from_env()
             .with_url("s3://future-file-format/")
             .with_retry({
-                let mut res = object_store::RetryConfig::default();
-                res.retry_timeout = std::time::Duration::from_secs(10);
-                res.max_retries = 1;
-                res
+                object_store::RetryConfig {
+                    retry_timeout: std::time::Duration::from_secs(10),
+                    max_retries: 1,
+                    ..Default::default()
+                }
             })
             .build()
             .unwrap(),
@@ -673,7 +674,7 @@ fn test_core(#[case] enable_built_in_wasm: bool) {
     // let original_file = "/mnt/nvme0n1/xinyu/tmp/12_str.parquet";
     // let original_file = "/mnt/nvme0n1/xinyu/tmp/core_no_double.parquet";
     let original_file = "/mnt/nvme0n1/xinyu/data/parquet/core.parquet";
-    let batches: Vec<RecordBatch> = read_parquet_file(&original_file, 64 * 1024);
+    let batches: Vec<RecordBatch> = read_parquet_file(original_file, 64 * 1024);
     test_read_file_roundtrip(
         &batches,
         Projection::default(),
@@ -705,7 +706,7 @@ fn test_pco_custom_wasm() {
         WASMId(0),
         WasmLib::new(
             "/home/xinyu/fff-devel/target/release/libfff_ude_example_pco_real_encoder.so".into(),
-            std::fs::read("/home/xinyu/fff-devel/target/wasm32-wasip1/opt-size-lvl3/fff_ude_example_pco_real.wasm").unwrap().into(),
+            std::fs::read("/home/xinyu/fff-devel/target/wasm32-wasip1/opt-size-lvl3/fff_ude_example_pco_real.wasm").unwrap(),
         ),
     )]);
     let mut data_type_to_wasm_id: HashMap<DataType, WASMId> = HashMap::new();

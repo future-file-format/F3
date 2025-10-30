@@ -1,5 +1,3 @@
-use std::vec;
-
 use arrow_buffer::{Buffer, MutableBuffer};
 use byteorder::{LittleEndian, ReadBytesExt};
 use bytes::Bytes;
@@ -22,14 +20,12 @@ fn decode_fsst_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffer>>>
     let symbols = bytes.split_to(symbols_size as usize);
     let symbols = bytemuck::cast_slice(&symbols);
     let lengths = bytes.split_to(length_size as usize);
-    let decompressor = Decompressor::new(&symbols, &lengths);
+    let decompressor = Decompressor::new(symbols, &lengths);
     let output = Buffer::from(decompressor.decompress(&bytes));
     // Const ptr should not be dropped
     std::mem::forget(bytes);
-    let mut res: Vec<Buffer> = vec![];
     // assume no nulls
-    res.push(MutableBuffer::from_len_zeroed(0).into());
-    res.push(output);
+    let res = [MutableBuffer::from_len_zeroed(0).into(), output];
     Ok(Box::new(res.into_iter()))
 }
 

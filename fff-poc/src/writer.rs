@@ -168,6 +168,7 @@ where
     // }
 }
 
+#[allow(clippy::arc_with_non_send_sync)]
 pub struct FileWriter<W: Write + Seek> {
     schema: Schema,
     column_encoders: Vec<Box<dyn LogicalColEncoder>>,
@@ -181,13 +182,14 @@ pub struct FileWriter<W: Write + Seek> {
 }
 
 impl<W: Write + Seek> FileWriter<W> {
+    #[allow(clippy::arc_with_non_send_sync)]
     pub fn try_new(schema: SchemaRef, writer: W, mut options: FileWriterOptions) -> Result<Self> {
         let checksum_type = options.checksum_type();
         let mut column_idx = ColumnIndexSequence::default();
         let wasm_context = Arc::new(
             match (
                 options.write_built_in_wasm(),
-                options.custom_encoding_options().len() > 0,
+                !options.custom_encoding_options().is_empty(),
             ) {
                 (true, false) => WASMWritingContext::default_with_always_set_custom_wasm(),
                 (false, true) => options.take_custom_encoding_options().into_context(),
@@ -271,15 +273,13 @@ impl<W: Write + Seek> FileWriter<W> {
                             .try_for_each(|chunk| self.state.flush_chunk(chunk))?;
                     };
                 }
-            } else {
-                if let Some(res) = encoder.encode(
-                    col.clone(),
-                    &mut self.state.column_counters[i],
-                    &mut self.shared_dictionary_context,
-                )? {
-                    res.into_iter()
-                        .try_for_each(|chunk| self.state.flush_chunk(chunk))?;
-                };
+            } else if let Some(res) = encoder.encode(
+                col.clone(),
+                &mut self.state.column_counters[i],
+                &mut self.shared_dictionary_context,
+            )? {
+                res.into_iter()
+                    .try_for_each(|chunk| self.state.flush_chunk(chunk))?;
             }
         }
         self.state.num_rows_in_file += batch.num_rows() as u32;
@@ -349,7 +349,7 @@ impl<W: Write + Seek> FileWriter<W> {
                 self.state.write_and_update_file_level_checksum(wasm)?;
                 let size = self.state.writer.stream_position()? - offset;
                 let mut b = fb::MetadataSectionBuilder::new(&mut fbb);
-                b.add_offset(offset as u64);
+                b.add_offset(offset);
                 b.add_size_(size as u32);
                 b.add_compression_type(CompressionType::Uncompressed);
                 Ok(b.finish())
@@ -450,7 +450,7 @@ impl<W: Write + Seek> FileWriter<W> {
         let optional_metadata_section = {
             let name = fbb.create_string("WASMBinaries");
             let names = fbb.create_vector(&[name]);
-            let offsets = fbb.create_vector(&[wasm_meta_start as u64]);
+            let offsets = fbb.create_vector(&[wasm_meta_start]);
             let sizes = fbb.create_vector(&[wasm_meta_size as u32]);
             let compression_types = fbb.create_vector(&[CompressionType::Uncompressed]);
             let mut builder = fb::OptionalMetadataSectionsBuilder::new(&mut fbb);

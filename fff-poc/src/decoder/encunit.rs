@@ -102,7 +102,7 @@ impl<'a> WASMEncUnitDecoder<'a> {
     }
 }
 
-impl<'a> EncUnitDecoder for WASMEncUnitDecoder<'a> {
+impl EncUnitDecoder for WASMEncUnitDecoder<'_> {
     fn decode(&self) -> Result<ArrayRef> {
         match &self.output_type {
             non_nest_types!() => {
@@ -142,21 +142,13 @@ impl EncUnitDecoder for VortexEncUnitDecoder {
                 vortex_decoder.decode_all_as_array()?
             }
             DataType::List(ref child) | DataType::LargeList(ref child)
-                if match child.data_type() {
-                    DataType::Struct(fields)
-                        if fields
-                            .iter()
-                            .map(|f| match f.data_type() {
-                                non_nest_types!() => true,
-                                _ => false,
-                            })
-                            .fold(true, |acc, x| acc && x)
-                            && cfg!(feature = "list-offsets-pushdown") =>
-                    {
-                        true
-                    }
-                    _ => false,
-                } =>
+                if matches!(child.data_type(),
+                        DataType::Struct(fields)
+                            if fields
+                                .iter()
+                                .all(|f| matches!(f.data_type(), non_nest_types!()))
+                            && cfg!(feature = "list-offsets-pushdown")
+                ) =>
             {
                 let mut vortex_decoder = VortexListStructDecoder::try_new(
                     bytes,
@@ -199,21 +191,12 @@ impl EncUnitDecoder for VortexEncUnitDecoder {
                 vortex_decoder.slice(start, stop)?
             }
             DataType::List(ref child) | DataType::LargeList(ref child)
-                if match child.data_type() {
+                if matches!(child.data_type(),
                     DataType::Struct(fields)
                         if fields
                             .iter()
-                            .map(|f| match f.data_type() {
-                                non_nest_types!() => true,
-                                _ => false,
-                            })
-                            .fold(true, |acc, x| acc && x)
-                            && cfg!(feature = "list-offsets-pushdown") =>
-                    {
-                        true
-                    }
-                    _ => false,
-                } =>
+                            .all(|f| matches!(f.data_type(), non_nest_types!()))
+                            && cfg!(feature = "list-offsets-pushdown")) =>
             {
                 let mut vortex_decoder = VortexListStructDecoder::try_new(
                     bytes,

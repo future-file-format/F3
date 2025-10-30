@@ -162,5 +162,5 @@ pub fn ppd_serialize(expr: PPDExpr) -> Vec<u8> {
 }
 
 pub fn ppd_deserialize(bytes: &[u8]) -> &ArchivedPPDExpr {
-    rkyv::access::<ArchivedPPDExpr, Error>(&bytes[..]).unwrap()
+    rkyv::access::<ArchivedPPDExpr, Error>(bytes).unwrap()
 }

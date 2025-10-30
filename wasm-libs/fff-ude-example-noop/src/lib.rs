@@ -8,7 +8,7 @@ fn noop(_input: &[u8]) -> Result<Box<[u8]>> {
     // black_box(some_buffer);
     // Th answer is yes.
     // let vec = Vec::new();
-    let vec = unsafe { Vec::from_raw_parts(0 as *mut u8, 0, 0) };
+    let vec = unsafe { Vec::from_raw_parts(std::ptr::null_mut::<u8>(), 0, 0) };
     Ok(vec.into_boxed_slice())
 }
 

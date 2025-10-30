@@ -79,7 +79,7 @@ impl SharedDictionaryCache {
                             encoded_chunk_buf,
                             wasm_context
                                 .as_ref()
-                                .map(|wasm_context| Arc::clone(&wasm_context)),
+                                .map(Arc::clone),
                             None,
                         )?;
                         let mut arrays = vec![];

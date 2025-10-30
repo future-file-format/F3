@@ -75,14 +75,14 @@ impl BottomKSketch {
                 let self_val = self.bottom_k_arr[i][self_bottom_pos];
                 let other_val = other.bottom_k_arr[i][other_bottom_pos];
                 collected += 1;
-                if self_val == other_val {
-                    common += 1;
-                    self_bottom_pos += 1;
-                    other_bottom_pos += 1;
-                } else if self_val < other_val {
-                    self_bottom_pos += 1;
-                } else {
-                    other_bottom_pos += 1;
+                match self_val.cmp(&other_val) {
+                    std::cmp::Ordering::Less => self_bottom_pos += 1,
+                    std::cmp::Ordering::Equal => {
+                        common += 1;
+                        self_bottom_pos += 1;
+                        other_bottom_pos += 1;
+                    }
+                    std::cmp::Ordering::Greater => other_bottom_pos += 1,
                 }
             }
             jaccard += (common as f64) / (collected as f64);

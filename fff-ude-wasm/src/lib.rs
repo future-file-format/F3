@@ -18,7 +18,6 @@
 
 use anyhow::{anyhow, bail, ensure, Context};
 use arrow_buffer::Buffer;
-use once_cell;
 use ram_file::{RamFile, RamFileRef};
 use std::collections::{HashMap, HashSet, VecDeque};
 use std::fmt::Debug;
@@ -85,6 +84,7 @@ impl Debug for Config {
     }
 }
 
+#[allow(clippy::type_complexity)]
 pub struct Instance {
     // extern "C" fn(len: usize, align: usize) -> *mut u8
     alloc: TypedFunc<(u32, u32), u32>,
@@ -392,12 +392,12 @@ impl Runtime {
         assert!(output.is_ok(), "error: {:?}", output.as_ref().err());
         let output = output.unwrap();
         // put the instance back to the pool if no more results
-        if output.is_none() {
+        if let Some(output) = output {
+            drop(guard);
+            Ok(StreamReadResult::Batch((output, instance)))
+        } else {
             self.instances.lock().unwrap().push_back(instance.clone());
             Ok(StreamReadResult::End)
-        } else {
-            drop(guard);
-            Ok(StreamReadResult::Batch((output.unwrap(), instance)))
         }
     }
 
@@ -513,6 +513,10 @@ impl WasmSlice {
 
     pub fn len(&self) -> u32 {
         self.len
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.len == 0
     }
 }
 

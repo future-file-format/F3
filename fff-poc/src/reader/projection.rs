@@ -7,6 +7,6 @@ pub enum Projection {
 
 impl Projection {
     pub fn new(indices: impl AsRef<[usize]>) -> Self {
-        Self::LeafColumnIndexes(indices.as_ref().iter().copied().collect())
+        Self::LeafColumnIndexes(indices.as_ref().to_vec())
     }
 }

@@ -27,7 +27,7 @@ pub(crate) struct DataBuffersIter<'a> {
     index: usize,
 }
 
-impl<'a> Iterator for DataBuffersIter<'a> {
+impl Iterator for DataBuffersIter<'_> {
     type Item = Bytes;
 
     fn next(&mut self) -> Option<Self::Item> {

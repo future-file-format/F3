@@ -51,7 +51,7 @@ impl<'a, R: Reader> NoDictColDecoder<'a, R> {
     }
 }
 
-impl<'a, R: Reader> ChunkDecoder for NoDictColDecoder<'a, R> {
+impl<R: Reader> ChunkDecoder for NoDictColDecoder<'_, R> {
     fn decode_batch(&mut self) -> Result<Option<ArrayRef>> {
         let encunit = self.encunit_iter.next();
         if encunit.is_none() {
@@ -70,9 +70,9 @@ impl<'a, R: Reader> ChunkDecoder for NoDictColDecoder<'a, R> {
             self.data_type.clone(),
             self.wasm_context
                 .as_ref()
-                .map(|wasm_context| Arc::clone(wasm_context)),
+                .map(Arc::clone),
         )?;
-        decoder.decode().map(|array| Some(array))
+        decoder.decode().map(Some)
     }
 
     fn decode_row_at(&mut self, row_id_in_chunk: usize, len: usize) -> Result<Option<ArrayRef>> {
@@ -91,7 +91,7 @@ impl<'a, R: Reader> ChunkDecoder for NoDictColDecoder<'a, R> {
             if cur >= row_id_in_chunk {
                 let idx = row_id_in_chunk - last_cur;
                 let to_decode = std::cmp::min(remaining, enc_unit_num_rows - idx);
-                remaining = remaining - to_decode;
+                remaining -= to_decode;
                 let data = self
                     .encoded_chunk_buf
                     .split_to(encblock_fb.size_() as usize);
@@ -103,7 +103,7 @@ impl<'a, R: Reader> ChunkDecoder for NoDictColDecoder<'a, R> {
                     self.data_type.clone(),
                     self.wasm_context
                         .as_ref()
-                        .map(|wasm_context| Arc::clone(wasm_context)),
+                        .map(Arc::clone),
                 )?;
                 // Return the array with only one element at the given index.
                 let array = match decoder.slice(idx, idx + to_decode) {
@@ -269,7 +269,7 @@ macro_rules! dict_index_to_data {
     }};
 }
 
-impl<'a, R: Reader> ChunkDecoder for DictColDecoder<'a, R> {
+impl<R: Reader> ChunkDecoder for DictColDecoder<'_, R> {
     fn decode_batch(&mut self) -> Result<Option<ArrayRef>> {
         let dict_encunit = self.encunit_iter.next();
         if dict_encunit.is_none() {
@@ -288,7 +288,7 @@ impl<'a, R: Reader> ChunkDecoder for DictColDecoder<'a, R> {
             self.data_type.clone(),
             self.wasm_context
                 .as_ref()
-                .map(|wasm_context| Arc::clone(wasm_context)),
+                .map(Arc::clone),
         )?;
         let dict = if dict_encblock_fb.num_rows() > 0 {
             dict_decoder.decode()?
@@ -312,7 +312,7 @@ impl<'a, R: Reader> ChunkDecoder for DictColDecoder<'a, R> {
             DataType::Int64,
             self.wasm_context
                 .as_ref()
-                .map(|wasm_context| Arc::clone(wasm_context)),
+                .map(Arc::clone),
         )?;
         let indices_ref = indices_decoder.decode()?;
         let indices = indices_ref.as_any().downcast_ref::<UInt64Array>().ok_or(
@@ -415,7 +415,7 @@ impl<'a, R: Reader> SharedDictColDecoder<'a, R> {
     }
 }
 
-impl<'a, R: Reader> ChunkDecoder for SharedDictColDecoder<'a, R> {
+impl<R: Reader> ChunkDecoder for SharedDictColDecoder<'_, R> {
     fn decode_batch(&mut self) -> Result<Option<ArrayRef>> {
         let index_encunit = self.encunit_iter.next();
         if index_encunit.is_none() {
@@ -434,7 +434,7 @@ impl<'a, R: Reader> ChunkDecoder for SharedDictColDecoder<'a, R> {
             DataType::Int64,
             self.wasm_context
                 .as_ref()
-                .map(|wasm_context| Arc::clone(wasm_context)),
+                .map(Arc::clone),
         )?;
         let indices = indices_decoder.decode()?;
         let dict = &self.shared_dictionary;

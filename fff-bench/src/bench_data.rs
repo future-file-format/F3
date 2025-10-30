@@ -994,6 +994,7 @@ impl BenchmarkDatasets {
                     let fff = std::fs::OpenOptions::new()
                         .write(true)
                         .create(true)
+                        .truncate(true)
                         .open(output_path)
                         .unwrap();
                     write_fff(&batches, &fff, options.clone()).unwrap();
@@ -1029,7 +1030,7 @@ impl BenchmarkDatasets {
             if PRINT_CR {
                 error!(
                     "FFF CR: {:.2}",
-                    fff_size as f64 / get_arrow_size(self, &output_fname) as f64
+                    fff_size as f64 / get_arrow_size(self, output_fname) as f64
                 );
             }
         }
@@ -1524,8 +1525,10 @@ impl BenchmarkDataset for BenchmarkDatasets {
     }
 
     async fn write_as_lance_v2_1(&self) {
-        let mut opts = LanceFileWriterOptions::default();
-        opts.format_version = Some(LanceFileVersion::V2_1);
+        let opts = lance_file::v2::writer::FileWriterOptions {
+            format_version: Some(LanceFileVersion::V2_1),
+            ..Default::default()
+        };
         self._write_as_lance(opts).await
     }
 

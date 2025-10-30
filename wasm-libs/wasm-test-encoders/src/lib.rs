@@ -14,6 +14,7 @@ use arrow_array::{
 };
 use arrow_buffer::{Buffer, MutableBuffer};
 use arrow_schema::DataType;
+use bytemuck::AnyBitPattern;
 use byteorder::{LittleEndian, ReadBytesExt};
 use bytes::Bytes;
 use fastlanes::BitPacking;
@@ -131,109 +132,54 @@ pub fn encode_flsbp_general<T: fastlanes::FastLanes + BitPacking + 'static>(
     encoded_data
 }
 
+#[allow(clippy::uninit_vec)]
+fn segment_to_buffer<T: AnyBitPattern + BitPacking + arrow_buffer::ArrowNativeType>(
+    input: &[u8],
+    bitwidth: usize,
+    len: usize,
+) -> Buffer {
+    let input = bytemuck::cast_slice(input);
+    let mut output = Vec::<T>::with_capacity(len);
+    unsafe {
+        output.set_len(len);
+    }
+    let packed_len = 128 * bitwidth / size_of::<T>();
+    for (start, end) in (0..len).step_by(1024).map(|i| (i, i + 1024)) {
+        let i = start / 1024;
+        unsafe {
+            BitPacking::unchecked_unpack(
+                bitwidth,
+                &input[i * packed_len..(i + 1) * packed_len],
+                &mut output[start..end],
+            );
+        }
+    }
+    Buffer::from(output)
+}
+
 fn decode_fls_bp(input: &[u8], _wasm: bool) -> Result<Box<dyn Iterator<Item = Buffer>>> {
     let len: u32 = (&input[input.len() - 4..input.len()]).read_u32::<LittleEndian>()?;
     let bitwidth: u32 = (&input[input.len() - 8..input.len() - 4]).read_u32::<LittleEndian>()?;
     let typeid: u32 = (&input[input.len() - 12..input.len() - 8]).read_u32::<LittleEndian>()?;
     let input = &input[0..input.len() - 12];
     let output_buffer = match typeid {
-        0 => {
-            type T = u8;
-            let input = bytemuck::cast_slice(input);
-            let mut output = Vec::<T>::new();
-            let packed_len = 128 * bitwidth as usize / size_of::<T>();
-            output.reserve(len as usize);
-            unsafe {
-                output.set_len(len as usize);
-            }
-            for (start, end) in (0..len as usize).step_by(1024).map(|i| (i, i + 1024)) {
-                let i = start / 1024;
-                unsafe {
-                    BitPacking::unchecked_unpack(
-                        bitwidth as usize,
-                        &input[i * packed_len..(i + 1) * packed_len],
-                        &mut output[start..end],
-                    );
-                }
-            }
-            Buffer::from(output)
-        }
-        1 => {
-            type T = u16;
-            let input = bytemuck::cast_slice(input);
-            let mut output = Vec::<T>::new();
-            let packed_len = 128 * bitwidth as usize / size_of::<T>();
-            output.reserve(len as usize);
-            unsafe {
-                output.set_len(len as usize);
-            }
-            for (start, end) in (0..len as usize).step_by(1024).map(|i| (i, i + 1024)) {
-                let i = start / 1024;
-                unsafe {
-                    BitPacking::unchecked_unpack(
-                        bitwidth as usize,
-                        &input[i * packed_len..(i + 1) * packed_len],
-                        &mut output[start..end],
-                    );
-                }
-            }
-            Buffer::from(output)
-        }
-        2 => {
-            type T = u32;
-            let input = bytemuck::cast_slice(input);
-            let mut output = Vec::<T>::new();
-            let packed_len = 128 * bitwidth as usize / size_of::<T>();
-            output.reserve(len as usize);
-            unsafe {
-                output.set_len(len as usize);
-            }
-            for (start, end) in (0..len as usize).step_by(1024).map(|i| (i, i + 1024)) {
-                let i = start / 1024;
-                unsafe {
-                    BitPacking::unchecked_unpack(
-                        bitwidth as usize,
-                        &input[i * packed_len..(i + 1) * packed_len],
-                        &mut output[start..end],
-                    );
-                }
-            }
-            Buffer::from(output)
-        }
-        3 => {
-            type T = u64;
-            let input = bytemuck::cast_slice(input);
-            let mut output = Vec::<T>::new();
-            let packed_len = 128 * bitwidth as usize / size_of::<T>();
-            output.reserve(len as usize);
-            unsafe {
-                output.set_len(len as usize);
-            }
-            for (start, end) in (0..len as usize).step_by(1024).map(|i| (i, i + 1024)) {
-                let i = start / 1024;
-                unsafe {
-                    BitPacking::unchecked_unpack(
-                        bitwidth as usize,
-                        &input[i * packed_len..(i + 1) * packed_len],
-                        &mut output[start..end],
-                    );
-                }
-            }
-            Buffer::from(output)
-        }
+        0 => segment_to_buffer::<u8>(input, bitwidth as usize, len as usize),
+        1 => segment_to_buffer::<u16>(input, bitwidth as usize, len as usize),
+        2 => segment_to_buffer::<u32>(input, bitwidth as usize, len as usize),
+        3 => segment_to_buffer::<u64>(input, bitwidth as usize, len as usize),
         _ => panic!(),
     };
 
-    let mut res: Vec<Buffer> = vec![];
-    // assume no nulls. We omit Nulls decode for purely testing the codec.
-    res.push(MutableBuffer::from_len_zeroed(0).into());
-    res.push(output_buffer);
     // if wasm {
     //     unsafe {
     //         dealloc(input.as_ptr() as *mut u8, input.len(), 1);
     //     }
     // }
-    Ok(Box::new(res.into_iter()))
+
+    // assume no nulls. We omit Nulls decode for purely testing the codec.
+    Ok(Box::new(
+        [MutableBuffer::from_len_zeroed(0).into(), output_buffer].into_iter(),
+    ))
 }
 
 pub fn decode_flsbp_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffer>>> {
@@ -277,16 +223,17 @@ pub fn decode_pco_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffer
         7 => Buffer::from(simple_decompress::<f64>(input).unwrap()),
         _ => panic!(),
     };
-    let mut res: Vec<Buffer> = vec![];
+
     // assume no nulls. We omit Nulls decode for purely testing the codec.
-    res.push(MutableBuffer::from_len_zeroed(0).into());
-    res.push(recovered);
-    Ok(Box::new(res.into_iter()))
+    Ok(Box::new(
+        [MutableBuffer::from_len_zeroed(0).into(), recovered].into_iter(),
+    ))
 }
 
 /// FIXME: We cannot return RustBuffer in the desired dylib because the underlying lib may be conpiled from C or other languages.
 /// In that sense, like the Arrow's FFI, it should also return a function pointer on how to drop this returned buffer.
 /// We will fix this. Or find others who did this before.
+#[allow(clippy::missing_safety_doc)]
 pub unsafe extern "C" fn encode_pco_real_general_c(
     input: FFI_ArrowArray,
     schema: FFI_ArrowSchema,
@@ -365,7 +312,7 @@ where
         _ => panic!("Unsupported type"),
     };
     let mut encoded = vec![];
-    let null_flag: u32 = input.nulls().is_some().then(|| 1).unwrap_or(0);
+    let null_flag: u32 = if input.nulls().is_some() { 1 } else { 0 };
     encoded.extend_from_slice(&null_flag.to_le_bytes());
     if let Some(buf) = input.nulls() {
         encoded.extend_from_slice(&((buf.buffer().len() as u32).to_le_bytes()));
@@ -409,6 +356,7 @@ pub fn decode_pco_real_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = B
 /// FIXME: We cannot return RustBuffer in the desired dylib because the underlying lib may be conpiled from C or other languages.
 /// In that sense, like the Arrow's FFI, it should also return a function pointer on how to drop this returned buffer.
 /// We will fix this. Or find others who did this before.
+#[allow(clippy::missing_safety_doc)]
 pub unsafe extern "C" fn encode_custom_c(
     input: FFI_ArrowArray,
     schema: FFI_ArrowSchema,
@@ -474,7 +422,7 @@ where
         _ => panic!("Unsupported type"),
     };
     let mut encoded = vec![];
-    let null_flag: u32 = input.nulls().is_some().then(|| 1).unwrap_or(0);
+    let null_flag: u32 = if input.nulls().is_some() { 1 } else { 0 };
     encoded.extend_from_slice(&null_flag.to_le_bytes());
     if let Some(buf) = input.nulls() {
         encoded.extend_from_slice(&((buf.buffer().len() as u32).to_le_bytes()));
@@ -504,7 +452,7 @@ where
     // Write down dict
     // Iterate dict in the order of idx
     // Step 1: Collect the keys and values into a vector of tuples
-    let mut pairs: Vec<_> = dict.iter().map(|(k, v)| (k, v)).collect();
+    let mut pairs: Vec<_> = dict.iter().collect();
     // Step 2: Sort the vector based on the values
     pairs.sort_by(|a, b| a.1.cmp(b.1));
     for (key, _) in pairs.into_iter() {
@@ -549,7 +497,7 @@ fn custom_decompress<T>(input: &[u8], len: u32) -> Result<Vec<u8>> {
     let dict_start = len as usize / 128;
     let mut res = Vec::new();
     for i in 0..dict_start {
-        let idx = input[i as usize];
+        let idx = input[i];
         let start = dict_start + (idx as usize) * 128 * size_of::<T>();
         let end = start + 128 * size_of::<T>();
         res.extend_from_slice(&input[start..end]);
@@ -562,12 +510,12 @@ pub fn encode_lz4_general(input: &[u8]) -> Vec<u8> {
 }
 pub fn decode_lz4_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffer>>> {
     let out = decompress_size_prepended(input).unwrap();
-    let mut res: Vec<Buffer> = vec![];
+
     // assume no nulls
-    res.push(MutableBuffer::from_len_zeroed(0).into());
     // This is incorrect because the result is not Arrow Array. We omit it here simply for testing decoding performance.
-    res.push(Buffer::from(out));
-    Ok(Box::new(res.into_iter()))
+    Ok(Box::new(
+        [MutableBuffer::from_len_zeroed(0).into(), Buffer::from(out)].into_iter(),
+    ))
 }
 
 pub fn encode_gzip_general(input: &[u8]) -> Vec<u8> {
@@ -579,12 +527,16 @@ pub fn decode_gzip_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffe
     let mut d = GzDecoder::new(input);
     let mut s = String::new();
     d.read_to_string(&mut s).unwrap();
-    let mut res: Vec<Buffer> = vec![];
+
     // assume no nulls
-    res.push(MutableBuffer::from_len_zeroed(0).into());
-    // This is incorrect because the result is not Arrow Array. We omit it here simply for testing decoding performance.
-    res.push(Buffer::from(s.into_bytes()));
-    Ok(Box::new(res.into_iter()))
+    Ok(Box::new(
+        [
+            MutableBuffer::from_len_zeroed(0).into(),
+            // This is incorrect because the result is not Arrow Array. We omit it here simply for testing decoding performance.
+            Buffer::from(s.into_bytes()),
+        ]
+        .into_iter(),
+    ))
 }
 
 pub fn encode_zstd_general(input: &[u8]) -> Vec<u8> {
@@ -597,12 +549,16 @@ pub fn encode_zstd_general(input: &[u8]) -> Vec<u8> {
 pub fn decode_zstd_general(input: &[u8]) -> Result<Box<dyn Iterator<Item = Buffer>>> {
     let mut out = Vec::new();
     zstd::stream::copy_decode(input, &mut out).unwrap();
-    let mut res: Vec<Buffer> = vec![];
+
     // assume no nulls
-    res.push(MutableBuffer::from_len_zeroed(0).into());
-    // This is incorrect because the result is not Arrow Array. We omit it here simply for testing decoding performance.
-    res.push(Buffer::from_vec(out));
-    Ok(Box::new(res.into_iter()))
+    Ok(Box::new(
+        [
+            MutableBuffer::from_len_zeroed(0).into(),
+            // This is incorrect because the result is not Arrow Array. We omit it here simply for testing decoding performance.
+            Buffer::from_vec(out),
+        ]
+        .into_iter(),
+    ))
 }
 
 pub fn encode_lz4_general2(input: ArrayRef) -> Vec<u8> {

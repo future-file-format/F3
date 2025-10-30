@@ -44,7 +44,7 @@ pub fn get_max_chunk_size<R: Reader + Clone>(reader: R) -> Result<usize> {
     let mut max_size = 0;
     let rg_metas = footer.row_group_metadatas();
     for rg_meta in rg_metas {
-        for (_, col_meta) in rg_meta.column_metadatas.iter().enumerate() {
+        for col_meta in rg_meta.column_metadatas.iter() {
             col_meta.column_chunks().unwrap().iter().for_each(|chunk| {
                 // log::error!("chunk size: {}", chunk.size_());
                 max_size = std::cmp::max(max_size, chunk.size_() as usize);
@@ -127,6 +127,7 @@ impl<R: Reader> FileReaderV2<R> {
         )
     }
 
+    #[allow(clippy::type_complexity)]
     pub fn get_shared_dict_sizes(
         &mut self,
     ) -> Result<(Vec<EncodingCounter>, Vec<Vec<(usize, usize)>>)> {
@@ -204,7 +205,7 @@ fn read_file_based_on_footer<R: Reader>(
     let mut record_batches = vec![];
     let rg_metas = footer.row_group_metadatas();
     // let projections = projections.map(|vec| vec.iter().map(|v| *v).collect::<HashSet<usize>>());
-    let selected_rg_metas = process_selection(selection, &rg_metas);
+    let selected_rg_metas = process_selection(selection, rg_metas);
     for (rg_meta, selection_in_rg) in selected_rg_metas {
         let mut column_idx = ColumnIndexSequence::default();
         let mut columns = vec![];
@@ -214,9 +215,7 @@ fn read_file_based_on_footer<R: Reader>(
                 Arc::clone(field),
                 &rg_meta.column_metadatas,
                 &mut column_idx,
-                wasm_context
-                    .as_ref()
-                    .map(|wasm_context| Arc::clone(wasm_context)),
+                wasm_context.as_ref().map(Arc::clone),
                 shared_dictionary_cache,
                 checksum_type,
             )?;
@@ -261,6 +260,7 @@ fn read_file_based_on_footer<R: Reader>(
     Ok(record_batches)
 }
 
+#[allow(clippy::type_complexity)]
 fn get_shared_dict_size_based_on_footer(
     footer: Footer,
     shared_dictionary_cache: &SharedDictionaryCache,
@@ -343,9 +343,7 @@ fn point_access_list_struct<R: Reader>(
             Arc::clone(&top_col_field),
             &rg_meta.column_metadatas,
             &mut column_idx,
-            wasm_context
-                .as_ref()
-                .map(|wasm_context| Arc::clone(wasm_context)),
+            wasm_context.as_ref().map(Arc::clone),
             shared_dictionary_cache,
         )?;
         let arrays = col_decoder.decode_batch_at_with_proj(col_leaf_id as usize, row_id, 1)?;
@@ -377,10 +375,10 @@ fn point_access_list_struct<R: Reader>(
     Ok(record_batches)
 }
 
-fn collect_stat_for_col<'a>(
+fn collect_stat_for_col(
     field: FieldRef,
     field_id: i32,
-    column_metas: &Vec<fb::ColumnMetadata<'a>>,
+    column_metas: &Vec<fb::ColumnMetadata<'_>>,
     column_idx: &mut ColumnIndexSequence,
 ) -> Result<()> {
     let column_index = column_idx.next_column_index();
@@ -529,16 +527,16 @@ fn read_postscript<R: Reader + ?Sized>(reader: &R, file_size: u64) -> Result<Pos
     let schema_checksum = LittleEndian::read_u64(&postscript_buffer[18..26]);
     let major_version = LittleEndian::read_u16(&postscript_buffer[26..28]);
     let minor_version = LittleEndian::read_u16(&postscript_buffer[28..30]);
-    Ok(PostScript::new(
+    Ok(PostScript {
         metadata_size,
         footer_size,
-        footer_compression.into(),
-        checksum_type.into(),
+        compression: footer_compression.into(),
+        checksum_type: checksum_type.into(),
         data_checksum,
         schema_checksum,
         major_version,
         minor_version,
-    ))
+    })
 }
 
 #[cfg(test)]
