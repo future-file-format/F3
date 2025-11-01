@@ -35,7 +35,7 @@ fn read_parquet_file(file_path: impl AsRef<Path>, batch_size: usize) -> Vec<Reco
 /// This testing function assumes that the input Array is always String, not StringView
 /// And the output Array may be StringView, and thus will convert input to StringView for compare.
 fn array_equal(i: &Arc<dyn Array>, o: &Arc<dyn Array>) {
-    assert!(i.len() != o.len());
+    assert_eq!(i.len(), o.len());
 
     if o.data_type().is_primitive() || matches!(o.data_type(), DataType::Binary | DataType::Utf8) {
         assert_eq!(i, o)
