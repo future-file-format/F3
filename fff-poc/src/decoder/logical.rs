@@ -66,7 +66,7 @@ impl<R: Reader> PrimitiveColDecoder<'_, R> {
                 ))
             })?;
             let computed_checksum = {
-                let mut checksum = create_checksum(&checksum_type);
+                let mut checksum = create_checksum(checksum_type);
                 checksum.update(&buf);
                 checksum.finalize()
             };
@@ -96,9 +96,7 @@ impl<R: Reader> LogicalColDecoder for PrimitiveColDecoder<'_, R> {
                 chunk_meta.encoding_as_shared_dictionary(),
                 &self.primitive_type,
                 encoded_chunk_buf,
-                self.wasm_context
-                    .as_ref()
-                    .map(|wasm_context| Arc::clone(&wasm_context)),
+                self.wasm_context.as_ref().map(Arc::clone),
                 Some(self.shared_dictionary_cache),
             )?);
             while let Some(array) = self.chunk_decoder.as_mut().unwrap().decode_batch()? {
@@ -143,9 +141,7 @@ impl<R: Reader> LogicalColDecoder for PrimitiveColDecoder<'_, R> {
                 chunk_meta.encoding_as_shared_dictionary(),
                 &self.primitive_type,
                 encoded_chunk_buf,
-                self.wasm_context
-                    .as_ref()
-                    .map(|wasm_context| Arc::clone(&wasm_context)),
+                self.wasm_context.as_ref().map(Arc::clone),
                 Some(self.shared_dictionary_cache),
             )?);
             let mut decoded = 0;
@@ -188,7 +184,7 @@ impl<R: Reader> LogicalColDecoder for ListColDecoder<'_, R> {
                     let arr = v_o.as_list::<i32>();
                     let offsets: ScalarBuffer<i32> = arr.to_data().buffers()[0].clone().into();
                     let offsets = OffsetBuffer::new(offsets);
-                    let nulls = v_o.as_list::<i32>().nulls().map(|x| x.clone());
+                    let nulls = v_o.as_list::<i32>().nulls().cloned();
                     res.push(Arc::new(ListArray::new(
                         // always return byte view array because of the change of underlining vortex.
                         field_to_view(child.clone()),
@@ -201,7 +197,7 @@ impl<R: Reader> LogicalColDecoder for ListColDecoder<'_, R> {
                     let offsets: ScalarBuffer<i64> =
                         v_o.as_list::<i64>().to_data().buffers()[0].clone().into();
                     let offsets = OffsetBuffer::new(offsets);
-                    let nulls = v_o.as_list::<i64>().nulls().map(|x| x.clone());
+                    let nulls = v_o.as_list::<i64>().nulls().cloned();
                     res.push(Arc::new(LargeListArray::new(
                         field_to_view(child.clone()),
                         offsets,
@@ -327,7 +323,7 @@ impl<R: Reader> LogicalListStructNonNestedColDecoder for ListStructColDecoder<'_
                             offsets[0] as usize,
                             (offsets[len] - offsets[0]) as usize,
                         )?;
-                        let nulls = v_o.as_list::<i32>().nulls().map(|x| x.clone());
+                        let nulls = v_o.as_list::<i32>().nulls().cloned();
                         res.push(Arc::new(ListArray::new(
                             Field::new_struct(
                                 child.name(),
@@ -397,7 +393,7 @@ impl<R: Reader> LogicalColDecoder for StructColDecoder<'_, R> {
 
         let res: Vec<ArrayRef> = validity
             .into_iter()
-            .zip(children.into_iter())
+            .zip(children)
             .map(|(v, cs)| {
                 // recover NullBuffer from BooleanArray
                 let bool_array = v.as_boolean();
@@ -446,11 +442,7 @@ pub fn create_list_struct_decoder<'a, R: Reader>(
             DataType::Struct(fields)
                 if fields
                     .iter()
-                    .map(|f| match f.data_type() {
-                        non_nest_types!() => true,
-                        _ => false,
-                    })
-                    .fold(true, |acc, x| acc && x) =>
+                    .all(|f| matches!(f.data_type(), non_nest_types!())) =>
             {
                 if cfg!(feature = "list-offsets-pushdown") {
                     // create offset-pushdown list struct decoder
@@ -484,9 +476,7 @@ pub fn create_list_struct_decoder<'a, R: Reader>(
                                         _ => unreachable!(),
                                     }
                                 },
-                                wasm_context: wasm_context
-                                    .as_ref()
-                                    .map(|wasm_context| Arc::clone(&wasm_context)),
+                                wasm_context: wasm_context.as_ref().map(Arc::clone),
                                 shared_dictionary_cache,
                                 checksum_type: None,
                             });
@@ -514,9 +504,7 @@ pub fn create_list_struct_decoder<'a, R: Reader>(
                             chunk_decoder: None,
                             chunks_meta_iter,
                             primitive_type: field.data_type().clone(),
-                            wasm_context: wasm_context
-                                .as_ref()
-                                .map(|wasm_context| Arc::clone(&wasm_context)),
+                            wasm_context: wasm_context.as_ref().map(Arc::clone),
                             shared_dictionary_cache,
                             checksum_type: None,
                         },
@@ -537,9 +525,7 @@ pub fn create_list_struct_decoder<'a, R: Reader>(
                                     chunks_meta_iter
                                 },
                                 primitive_type: DataType::Boolean,
-                                wasm_context: wasm_context
-                                    .as_ref()
-                                    .map(|wasm_context| Arc::clone(&wasm_context)),
+                                wasm_context: wasm_context.as_ref().map(Arc::clone),
                                 shared_dictionary_cache,
                                 checksum_type: None,
                             },
@@ -564,9 +550,7 @@ pub fn create_list_struct_decoder<'a, R: Reader>(
                                         chunks_meta_iter
                                     },
                                     primitive_type: f.data_type().clone(),
-                                    wasm_context: wasm_context
-                                        .as_ref()
-                                        .map(|wasm_context| Arc::clone(&wasm_context)),
+                                    wasm_context: wasm_context.as_ref().map(Arc::clone),
                                     shared_dictionary_cache,
                                     checksum_type: None,
                                 })
@@ -647,9 +631,7 @@ pub fn create_logical_decoder<'a, R: Reader>(
                     chunks_meta_iter,
                     // CAUTION: here we create a list primitive decoder but only output validity and offsets.
                     primitive_type: field.data_type().clone(),
-                    wasm_context: wasm_context
-                        .as_ref()
-                        .map(|wasm_context| Arc::clone(&wasm_context)),
+                    wasm_context: wasm_context.as_ref().map(Arc::clone),
                     shared_dictionary_cache,
                     checksum_type,
                 },
@@ -672,9 +654,7 @@ pub fn create_logical_decoder<'a, R: Reader>(
                 chunk_decoder: None,
                 chunks_meta_iter,
                 primitive_type: DataType::Boolean,
-                wasm_context: wasm_context
-                    .as_ref()
-                    .map(|wasm_context| Arc::clone(&wasm_context)),
+                wasm_context: wasm_context.as_ref().map(Arc::clone),
                 shared_dictionary_cache,
                 checksum_type,
             },
@@ -686,9 +666,7 @@ pub fn create_logical_decoder<'a, R: Reader>(
                         Arc::clone(f),
                         column_metas,
                         column_idx,
-                        wasm_context
-                            .as_ref()
-                            .map(|wasm_context| Arc::clone(&wasm_context)),
+                        wasm_context.as_ref().map(Arc::clone),
                         shared_dictionary_cache,
                         checksum_type,
                     )

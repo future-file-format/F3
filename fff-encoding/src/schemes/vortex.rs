@@ -108,10 +108,7 @@ impl VortexEncoder {
     }
 
     fn regular_encode(&self, arr: ArrayRef) -> Result<EncUnit> {
-        debug_assert!(match arr.data_type() {
-            non_nest_types!() => true,
-            _ => false,
-        });
+        debug_assert!(matches!(arr.data_type(), non_nest_types!()));
         Ok(EncUnit::new(
             self.encode_arr(arr)?,
             Encoding::Vortex,
@@ -121,10 +118,10 @@ impl VortexEncoder {
 
     /// For List type, we only encode the validity and offsets, children are handled by logical encoders.
     fn list_encode(&self, arr: ArrayRef) -> Result<EncUnit> {
-        debug_assert!(match arr.data_type() {
-            DataType::List(_) | DataType::LargeList(_) => true,
-            _ => false,
-        });
+        debug_assert!(matches!(
+            arr.data_type(),
+            DataType::List(_) | DataType::LargeList(_)
+        ));
         let (validity, offsets) = match arr.data_type() {
             DataType::List(_) => {
                 let list_array = arr
@@ -177,10 +174,10 @@ impl VortexEncoder {
     }
 
     pub fn list_struct_encode(&self, list_arr: ArrayRef, field: ArrayRef) -> Result<EncUnit> {
-        debug_assert!(match list_arr.data_type() {
-            DataType::List(_) | DataType::LargeList(_) => true,
-            _ => false,
-        });
+        debug_assert!(matches!(
+            list_arr.data_type(),
+            DataType::List(_) | DataType::LargeList(_)
+        ));
         let (validity, offsets) = match list_arr.data_type() {
             DataType::List(_) => {
                 let list_array = list_arr
@@ -302,7 +299,7 @@ impl VortexDecoderBuilder {
     }
 
     pub fn with_ppd(mut self, ppd: VtxPPD) -> Self {
-        assert!(self.partial_decode == false);
+        assert!(!self.partial_decode);
         self.ppd = Some(ppd);
         self
     }
@@ -419,7 +416,7 @@ impl Decoder for VortexDecoder {
     /// FIXME: decode_a_vector should be redesigned to be indexing based. Or just like slice.
     fn decode_a_vector(&mut self) -> Result<Option<Vec<Buffer>>> {
         Ok(self.vortex_array.as_ref().map(|arr| {
-            let arr = slice(&arr, 0, 1024).expect("Slice failed");
+            let arr = slice(arr, 0, 1024).expect("Slice failed");
             let mut res = Vec::new();
             let arrow_array = vortex_array_to_arrow(arr);
             if let Some(b) = arrow_array.nulls() {

@@ -1,3 +1,5 @@
+#![allow(clippy::missing_safety_doc)]
+
 use arrow_buffer::{Buffer, MutableBuffer};
 use arrow_data::ArrayData;
 pub use fff_core::errors::Result;

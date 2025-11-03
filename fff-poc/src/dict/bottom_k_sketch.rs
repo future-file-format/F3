@@ -9,12 +9,12 @@ const K: usize = 2048;
 const M: usize = 3;
 // Total complexity is O(M(n log K + c^2 K)), where n is #elements, c is #columns
 
-lazy_static!(
+lazy_static! {
     static ref COEFFS: Vec<(u64, u64)> = {
         let mut rng = rand::thread_rng();
         (0..M).map(|_| (rng.gen(), rng.gen())).collect()
     };
-);
+}
 
 pub struct BottomKSketch {
     /// A heap to store the bottom K hash values
@@ -75,14 +75,14 @@ impl BottomKSketch {
                 let self_val = self.bottom_k_arr[i][self_bottom_pos];
                 let other_val = other.bottom_k_arr[i][other_bottom_pos];
                 collected += 1;
-                if self_val == other_val {
-                    common += 1;
-                    self_bottom_pos += 1;
-                    other_bottom_pos += 1;
-                } else if self_val < other_val {
-                    self_bottom_pos += 1;
-                } else {
-                    other_bottom_pos += 1;
+                match self_val.cmp(&other_val) {
+                    std::cmp::Ordering::Less => self_bottom_pos += 1,
+                    std::cmp::Ordering::Equal => {
+                        common += 1;
+                        self_bottom_pos += 1;
+                        other_bottom_pos += 1;
+                    }
+                    std::cmp::Ordering::Greater => other_bottom_pos += 1,
                 }
             }
             jaccard += (common as f64) / (collected as f64);

@@ -45,30 +45,6 @@ pub struct PostScript {
     pub minor_version: u16,
 }
 
-impl PostScript {
-    pub fn new(
-        metadata_size: u32,
-        footer_size: u32,
-        compression: fb::CompressionType,
-        checksum_type: ChecksumType,
-        data_checksum: u64,
-        schema_checksum: u64,
-        major_version: u16,
-        minor_version: u16,
-    ) -> Self {
-        Self {
-            metadata_size,
-            footer_size,
-            compression,
-            checksum_type,
-            data_checksum,
-            schema_checksum,
-            major_version,
-            minor_version,
-        }
-    }
-}
-
 /// Maps an encoding type to its semantic version
 #[derive(Clone, Debug)]
 pub struct EncodingVersion {
@@ -118,19 +94,14 @@ pub(crate) fn create_default_encoding_versions() -> Result<Vec<EncodingVersion>>
     Ok(encoding_versions)
 }
 
-#[derive(Clone)]
+#[derive(Clone, Default)]
 pub(crate) enum DictionaryEncoding {
+    #[default]
     NoDictionary,
     /// Stores EncBlockIndex of dictionary chunks
     Dictionary(Vec<u32>),
     /// Store the index of shared dictionary
     SharedDictionary(u32),
-}
-
-impl Default for DictionaryEncoding {
-    fn default() -> Self {
-        DictionaryEncoding::NoDictionary
-    }
 }
 
 /// ColumnMetadata (direct) for writer to use.
@@ -271,7 +242,7 @@ impl ToFlatBuffer for Chunk {
                 Some(fb::NoDictionary::create(fbb, &fb::NoDictionaryArgs {}).as_union_value()),
             ),
             DictionaryEncoding::Dictionary(idxs) => {
-                let dictionary_encunit_idxs = Some(fbb.create_vector(&idxs));
+                let dictionary_encunit_idxs = Some(fbb.create_vector(idxs));
                 (
                     fb::DictionaryEncoding::LocalDictionary,
                     Some(
@@ -334,12 +305,7 @@ impl From<&fb::WASMEncoding<'_>> for WASMEncoding {
     fn from(fb: &fb::WASMEncoding) -> Self {
         Self {
             wasm_id: fb.wasm_id(),
-            mini_encunit_sizes: fb
-                .mini_encunit_sizes()
-                .unwrap()
-                .into_iter()
-                .map(|x| x as u32)
-                .collect(),
+            mini_encunit_sizes: fb.mini_encunit_sizes().unwrap().into_iter().collect(),
         }
     }
 }
@@ -396,10 +362,9 @@ impl From<&fb::Encoding<'_>> for Encoding {
     fn from(fb: &fb::Encoding) -> Self {
         Self {
             encoding_type: fb.type_(),
-            wasm_encoding: match fb.wasm_encoding() {
-                Some(fb_wasm_encoding) => Some(WASMEncoding::from(&fb_wasm_encoding)),
-                _ => None,
-            },
+            wasm_encoding: fb
+                .wasm_encoding()
+                .map(|fb_wasm_encoding| WASMEncoding::from(&fb_wasm_encoding)),
         }
     }
 }
@@ -428,10 +393,10 @@ impl ToFlatBuffer for Encoding {
     type Target<'a> = fb::Encoding<'a>;
 
     fn to_fb<'fb>(&self, fbb: &mut FlatBufferBuilder<'fb>) -> WIPOffset<Self::Target<'fb>> {
-        let wasm_encoding = match &self.wasm_encoding {
-            Some(wasm_encoding) => Some(wasm_encoding.to_fb(fbb)),
-            _ => None,
-        };
+        let wasm_encoding = self
+            .wasm_encoding
+            .as_ref()
+            .map(|wasm_encoding| wasm_encoding.to_fb(fbb));
         fb::Encoding::create(
             fbb,
             &fb::EncodingArgs {
@@ -704,10 +669,8 @@ impl<'a> Footer<'a> {
                     let column_metadatas: Vec<fb::ColumnMetadata> = row_group_projected_col_bufs
                         .iter()
                         .map(|buf| {
-                            flatbuffers::root::<fff_format::File::fff::flatbuf::ColumnMetadata>(
-                                &buf,
-                            )
-                            .unwrap()
+                            flatbuffers::root::<fff_format::File::fff::flatbuf::ColumnMetadata>(buf)
+                                .unwrap()
                         })
                         .collect();
                     GroupedColumnMetadata {
@@ -768,7 +731,7 @@ impl<'a> Footer<'a> {
                             .collect();
                         GroupedColumnMetadata {
                             column_metadatas,
-                            row_count: row_count,
+                            row_count,
                             _offset: offset,
                             _size: size,
                         }
@@ -796,6 +759,7 @@ impl<'a> Footer<'a> {
     }
 }
 
+#[allow(clippy::type_complexity)]
 pub fn parse_footer<'a>(
     footer_fbs: &fb::Footer<'a>,
 ) -> Result<(

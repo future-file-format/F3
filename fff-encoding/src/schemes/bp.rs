@@ -1,6 +1,5 @@
 /// Deprecated after using Vortex.
 /// Leave it here only for legacy usage.
-
 use std::mem;
 
 use crate::enc_unit::ALIGNMENT;

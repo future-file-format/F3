@@ -121,7 +121,7 @@ impl ListOfStructColEncoder {
             },
             self.compression_type,
         ));
-        self.accumulated_chunk.num_rows += list_len as usize;
+        self.accumulated_chunk.num_rows += list_len;
         if self.accumulated_size > self.column_chunk_size {
             let chunk = std::mem::take(&mut self.accumulated_chunk);
             self.accumulated_size = 0;
@@ -214,7 +214,7 @@ impl PhysicalColEncoder for EncoderDictColEncoder {
             },
             self.compression_type,
         ));
-        self.accumulated_chunk.num_rows += array.len() as usize;
+        self.accumulated_chunk.num_rows += array.len();
         if self.accumulated_size > self.column_chunk_size {
             let chunk = std::mem::take(&mut self.accumulated_chunk);
             self.accumulated_size = 0;
@@ -538,11 +538,8 @@ impl SharedDictColEncoder {
         self.buffered_array_mem_size = 0;
         let dict_idx = match self.submitted_dict_idx {
             Some(idx) => idx,
-            None => {
-                let idx = shared_dict_ctx
-                    .new_dictionary(buffered_arrs.first().unwrap().data_type().clone())?;
-                idx
-            }
+            None => shared_dict_ctx
+                .new_dictionary(buffered_arrs.first().unwrap().data_type().clone())?,
         };
         let indices_arrs = buffered_arrs
             .into_iter()
@@ -583,14 +580,14 @@ impl SharedDictColEncoder {
                         if self.wasm_context.always_set_custom_wasm_for_built_in() {
                             self.wasm_context.builtin_wasm_id()
                         } else {
-                            self.wasm_context.data_type_to_wasm_id(&arr.data_type())
+                            self.wasm_context.data_type_to_wasm_id(arr.data_type())
                         }
                         .map(|id| WASMEncoding::new(id.0, Vec::new())),
                     )?
                 },
                 self.compression_type,
             ));
-            accumulated_chunk.num_rows += arr.len() as usize;
+            accumulated_chunk.num_rows += arr.len();
             if accumulated_size > self.column_chunk_size {
                 res.push(accumulated_chunk);
                 accumulated_chunk = EncodedColumnChunk::builder()
@@ -616,7 +613,7 @@ impl PhysicalColEncoder for SharedDictColEncoder {
         if self
             .buffered_arrays
             .first()
-            .map_or(false, |buf_arr| *buf_arr.data_type() != *array.data_type())
+            .is_some_and(|buf_arr| *buf_arr.data_type() != *array.data_type())
         {
             Err(fff_core::errors::Error::General(
                 "Datatypes of arrays do not match".to_owned(),
@@ -787,14 +784,14 @@ impl GLBestEncoder {
                         if self.wasm_context.always_set_custom_wasm_for_built_in() {
                             self.wasm_context.builtin_wasm_id()
                         } else {
-                            self.wasm_context.data_type_to_wasm_id(&arr.data_type())
+                            self.wasm_context.data_type_to_wasm_id(arr.data_type())
                         }
                         .map(|id| WASMEncoding::new(id.0, Vec::new())),
                     )?
                 },
                 self.compression_type,
             ));
-            accumulated_chunk.num_rows += arr.len() as usize;
+            accumulated_chunk.num_rows += arr.len();
             // Only split to multiple chunks for indices
             if dict_idx.is_some() && accumulated_size > self.column_chunk_size {
                 res.push(accumulated_chunk);
@@ -821,7 +818,7 @@ impl PhysicalColEncoder for GLBestEncoder {
         if self
             .buffered_arrays
             .first()
-            .map_or(false, |buf_arr| *buf_arr.data_type() != *array.data_type())
+            .is_some_and(|buf_arr| *buf_arr.data_type() != *array.data_type())
         {
             Err(fff_core::errors::Error::General(
                 "Datatypes of arrays do not match".to_owned(),
@@ -960,7 +957,7 @@ impl PhysicalColEncoder for GLBestEncoder {
     }
 }
 
-/// A specific encoder containing the encoding of both validity and offsets for a List Array.
+// /// A specific encoder containing the encoding of both validity and offsets for a List Array.
 // pub struct ListOffsetEncoder {
 //     accumulated_chunk: EncodedColumnChunk,
 //     accumulated_size: u64,
@@ -1002,7 +999,7 @@ impl PhysicalColEncoder for GLBestEncoder {
 //     }
 // }
 
-/// Should only be useful for Struct fields
+// /// Should only be useful for Struct fields
 // pub struct ValidityEncoder {
 //     accumulated_chunk: EncodedColumnChunk,
 //     accumulated_size: u64,
@@ -1128,7 +1125,7 @@ mod tests {
             .encode(a.clone(), &mut counter, &mut shared_dict_ctx)
             .unwrap();
         let res = encoder.finish(&mut counter, &mut shared_dict_ctx).unwrap();
-        assert_eq!(res.is_empty(), false);
+        assert!(!res.is_empty());
         let res = res.first().unwrap();
         let encunit = res.encunits[0].clone();
         assert_eq!(
@@ -1173,8 +1170,8 @@ mod tests {
             .encode(a.clone(), &mut counter, &mut shared_dict_ctx)
             .unwrap();
         let res = encoder.finish(&mut counter, &mut shared_dict_ctx).unwrap();
-        assert_eq!(_res.is_empty(), true);
-        assert_eq!(res.is_empty(), false);
+        assert!(_res.is_empty());
+        assert!(!res.is_empty());
         let res = res.first().unwrap();
         let dict_encunit = res.encunits[0].clone();
         assert_eq!(

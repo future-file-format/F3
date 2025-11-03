@@ -1,11 +1,10 @@
-/// A very simple wasm lib to verify that wmemcheck will fail only calling `alloc`
+//! A very simple wasm lib to verify that wmemcheck will fail only calling `alloc`
 
 /// Allocate memory.
 ///
 /// # Safety
 ///
 /// See [`std::alloc::GlobalAlloc::alloc`].
-
 #[unsafe(no_mangle)]
 pub unsafe extern "C" fn alloc(len: usize, align: usize) -> *mut u8 {
     std::alloc::alloc(std::alloc::Layout::from_size_align_unchecked(len, align))

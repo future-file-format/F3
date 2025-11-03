@@ -324,7 +324,8 @@ impl Dictionary {
                         "Array type mismatch in submit values".to_string(),
                     ))?;
                 // TODO: unnecessary copy of strings
-                Ok(typed_dict.submit_values(arr.into_iter().map(|x| x.map(|y| y.to_owned()))))
+                typed_dict.submit_values(arr.into_iter().map(|x| x.map(|y| y.to_owned())));
+                Ok(())
             }
             DataType::LargeUtf8 => {
                 let typed_dict = self
@@ -340,7 +341,8 @@ impl Dictionary {
                         "Array type mismatch in submit values".to_string(),
                     ))?;
                 // TODO: unnecessary copy of strings
-                Ok(typed_dict.submit_values(arr.into_iter().map(|x| x.map(|y| y.to_owned()))))
+                typed_dict.submit_values(arr.into_iter().map(|x| x.map(|y| y.to_owned())));
+                Ok(())
             }
             DataType::Timestamp(TimeUnit::Second, _) => {
                 typed_dict_submit_values!(self, arr, TimestampSecondArray, i64, i64)
@@ -558,14 +560,12 @@ impl<T: Clone + DictHash<U>, U: Ord + std::hash::Hash + Clone> TypedDict<T, U> {
         &self.indices[slice_begin_idx..]
     }
     pub fn submit_values(&mut self, arr: impl Iterator<Item = Option<T>>) {
-        for val in arr {
-            if let Some(val) = val {
-                let hash_val = T::dict_hash(&val);
-                if self.key_to_ind.get(&hash_val).is_none() {
-                    let ind = self.dictionary.len();
-                    self.key_to_ind.insert(hash_val, ind as u64);
-                    self.dictionary.push(val.clone());
-                }
+        for val in arr.flatten() {
+            let hash_val = T::dict_hash(&val);
+            if let std::collections::hash_map::Entry::Vacant(e) = self.key_to_ind.entry(hash_val) {
+                let ind = self.dictionary.len();
+                e.insert(ind as u64);
+                self.dictionary.push(val.clone());
             }
         }
     }
@@ -574,10 +574,10 @@ impl<T: Clone + DictHash<U>, U: Ord + std::hash::Hash + Clone> TypedDict<T, U> {
         T: 'a,
     {
         for val in arr {
-            let hash_val = T::dict_hash(&val);
-            if self.key_to_ind.get(&hash_val).is_none() {
+            let hash_val = T::dict_hash(val);
+            if let std::collections::hash_map::Entry::Vacant(e) = self.key_to_ind.entry(hash_val) {
                 let ind = self.dictionary.len();
-                self.key_to_ind.insert(hash_val, ind as u64);
+                e.insert(ind as u64);
                 self.dictionary.push(val.clone());
             }
         }
@@ -586,7 +586,7 @@ impl<T: Clone + DictHash<U>, U: Ord + std::hash::Hash + Clone> TypedDict<T, U> {
         let mut common_values = vec![];
         for val in &other.dictionary {
             let hash_val = T::dict_hash(val);
-            if let Some(_) = self.key_to_ind.get(&hash_val) {
+            if self.key_to_ind.contains_key(&hash_val) {
                 common_values.push(val.clone());
             }
         }

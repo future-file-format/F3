@@ -169,6 +169,7 @@ impl SharedDictionaryContext {
         self.dictionaries[dict_idx as usize].submit_values(values)
     }
 
+    #[allow(clippy::type_complexity)]
     pub fn finish_and_flush(
         &mut self,
         wasm_context: Arc<WASMWritingContext>,

@@ -95,7 +95,7 @@ pub fn write_fff(batches: &[RecordBatch], fff: &File, options: FileWriterOptions
     let mut memory_usage_sum = 0;
     let mut cnt = 0;
     for batch in batches {
-        fff_writer.write_batch(&batch).unwrap();
+        fff_writer.write_batch(batch).unwrap();
         if fff_writer.memory_size() != 0 {
             memory_usage_sum += fff_writer.memory_size();
             cnt += 1;
@@ -122,10 +122,11 @@ pub fn read_fff(pathbuf: PathBuf, opt: ReadFFFOpt) -> Result<Vec<RecordBatch>> {
             object_store::aws::AmazonS3Builder::from_env()
                 .with_url(path)
                 .with_retry({
-                    let mut res = object_store::RetryConfig::default();
-                    res.retry_timeout = std::time::Duration::from_secs(10);
-                    res.max_retries = 1;
-                    res
+                    object_store::RetryConfig {
+                        retry_timeout: std::time::Duration::from_secs(10),
+                        max_retries: 1,
+                        ..Default::default()
+                    }
                 })
                 .build()
                 .unwrap(),
@@ -134,7 +135,7 @@ pub fn read_fff(pathbuf: PathBuf, opt: ReadFFFOpt) -> Result<Vec<RecordBatch>> {
         // count the number of slashes
         let slash_count = path.chars().filter(|&c| c == '/').count();
         assert!(slash_count == 3, "only support s3://bucket/file_name");
-        let file_name = path.split('/').last().unwrap();
+        let file_name = path.split('/').next_back().unwrap();
         let f1 = fff_poc::io::reader::ObjectStoreReadAt::new(
             bucket.clone(),
             object_store::path::Path::from(file_name).into(),
@@ -172,7 +173,7 @@ pub fn read_fff_aot_wasm(
 pub fn write_parquet(batches: &[RecordBatch], parquet: &File) -> Result<()> {
     let mut parquet_writer = ArrowWriter::try_new(parquet, batches[0].schema(), None).unwrap();
     for batch in batches {
-        parquet_writer.write(&batch).unwrap();
+        parquet_writer.write(batch).unwrap();
     }
     parquet_writer.close().unwrap();
     Ok(())
@@ -234,7 +235,7 @@ pub async fn read_lance(
     full_path: bool,
 ) -> Result<usize> {
     let object_store = Arc::new({
-        let res = if path.starts_with("s3://") {
+        if path.starts_with("s3://") {
             let (store, _) = lance_io::object_store::ObjectStore::from_uri(path)
                 .await
                 .unwrap();
@@ -243,8 +244,7 @@ pub async fn read_lance(
             let mut res = lance_io::object_store::ObjectStore::local();
             res.set_io_parallelism(1);
             res
-        };
-        res
+        }
     });
     let path = if full_path {
         if path.starts_with("s3://") {
@@ -318,6 +318,7 @@ pub fn write_orc(batches: &[RecordBatch], path: &str) -> Result<()> {
     let file = std::fs::OpenOptions::new()
         .write(true)
         .create(true)
+        .truncate(true)
         .open(path)?;
     let mut writer = orc_rust::ArrowWriterBuilder::new(file, batches[0].schema())
         .try_build()
@@ -401,7 +402,7 @@ pub fn parquet_decompress_from<T: ChunkReader + 'static>(
     let builder = if let Some(projections) = projections {
         let file_metadata = builder.metadata().file_metadata().clone();
         let mask =
-            ProjectionMask::leaves(file_metadata.schema_descr(), projections.iter().map(|&x| x));
+            ProjectionMask::leaves(file_metadata.schema_descr(), projections.iter().copied());
         builder.with_projection(mask)
     } else {
         builder
@@ -440,7 +441,7 @@ pub async fn parquet_decompress_from_async(
     let builder = if let Some(projections) = projections {
         let file_metadata = builder.metadata().file_metadata().clone();
         let mask =
-            ProjectionMask::leaves(file_metadata.schema_descr(), projections.iter().map(|&x| x));
+            ProjectionMask::leaves(file_metadata.schema_descr(), projections.iter().copied());
         builder.with_projection(mask)
     } else {
         builder

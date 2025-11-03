@@ -10,16 +10,13 @@ fn main() -> Result<()> {
     );
 
     // compile flatc if it does not exist
-    if flatc.check().is_err() {
-        if !Command::new("sh")
+    if flatc.check().is_err() && !Command::new("sh")
             .current_dir(Path::new(&env::var("CARGO_MANIFEST_DIR").unwrap()).join(".."))
-            .args(&["scripts/install_flatc.sh"])
+            .args(["scripts/install_flatc.sh"])
             .status()
             .with_context(|| "install_flatc.sh failed")?
-            .success()
-        {
-            anyhow::bail!("install_flatc.sh failed");
-        }
+            .success() {
+        anyhow::bail!("install_flatc.sh failed");
     }
 
     flatc
@@ -45,7 +42,7 @@ fn main() -> Result<()> {
             .iter()
             .map(|p| p.as_path())
             .collect::<Vec<&Path>>(),
-        out_dir: Path::new(env::var("OUT_DIR").unwrap().as_str()).as_ref(),
+        out_dir: Path::new(env::var("OUT_DIR").unwrap().as_str()),
         extra: &["--filename-suffix", ""],
         ..Default::default()
     })?;

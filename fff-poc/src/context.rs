@@ -107,14 +107,13 @@ impl WASMWritingContext {
     }
 
     pub fn data_type_to_wasm_id(&self, dt: &DataType) -> Option<WASMId> {
-        self.data_type_to_wasm_id.get(dt).map(|&x| x)
+        self.data_type_to_wasm_id.get(dt).copied()
     }
 
     pub fn data_type_to_wasm_lib(&self, dt: &DataType) -> Option<WasmLib> {
         self.data_type_to_wasm_id
             .get(dt)
-            .map(|x| self.wasms.get(x).cloned())
-            .flatten()
+            .and_then(|x| self.wasms.get(x).cloned())
     }
 
     pub fn always_set_custom_wasm_for_built_in(&self) -> bool {

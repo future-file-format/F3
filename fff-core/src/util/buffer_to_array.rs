@@ -345,7 +345,7 @@ pub fn primitive_array_from_arrow_buffers_iter(
             let null_buffer = arrow_buffer_to_validity(null_buffer, num_rows);
 
             let data_buffer = buffer_iter.next().unwrap();
-            let data_buffer = Buffer::from(data_buffer);
+            let data_buffer = data_buffer;
             let data_buffer = BooleanBuffer::new(data_buffer, 0, num_rows as usize);
 
             Ok(Arc::new(BooleanArray::new(data_buffer, null_buffer)))
@@ -734,12 +734,12 @@ pub fn primitive_array_from_buffers(
         DataType::List(child) => Ok(new_list_offsets_validity::<Int32Type>(
             buffers,
             num_rows,
-            Arc::clone(&child),
+            Arc::clone(child),
         )),
         DataType::LargeList(child) => Ok(new_list_offsets_validity::<Int64Type>(
             buffers,
             num_rows,
-            Arc::clone(&child),
+            Arc::clone(child),
         )),
         _ => Err(Error::IO(
             format!(

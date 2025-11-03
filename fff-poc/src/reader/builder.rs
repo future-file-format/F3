@@ -177,7 +177,7 @@ impl<R: Reader + Clone> FileReaderV2Builder<R> {
             row_groups_pointer.sizes().unwrap().iter()
         )
         .map(|(row_count, offset, size)| RowGroupCntNPointer {
-            row_count: row_count,
+            row_count,
             _offset: offset,
             _size: size,
         })
@@ -220,7 +220,6 @@ impl<R: Reader + Clone> FileReaderV2Builder<R> {
                     .col_metadatas()
                     .unwrap()
                     .into_iter()
-                    .map(|v| v)
                     .collect(),
                 Projection::LeafColumnIndexes(ref projections) => {
                     let mut column_meta_offsets = vec![];

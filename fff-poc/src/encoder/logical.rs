@@ -86,7 +86,7 @@ impl LogicalColEncoder for FlatColEncoder {
         for data_chunk in self.data_encoder.encode(array, counter, shared_dict_ctx)? {
             res.push(data_chunk.update_column_index(self.column_index));
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn memory_size(&self) -> usize {
@@ -102,7 +102,7 @@ impl LogicalColEncoder for FlatColEncoder {
         for data_chunk in self.data_encoder.finish(counter, shared_dict_ctx)? {
             res.push(data_chunk.update_column_index(self.column_index));
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn submit_dict(&mut self, shared_dict_ctx: &mut SharedDictionaryContext) -> Result<()> {
@@ -139,7 +139,7 @@ impl LogicalColEncoder for ListColEncoder {
         {
             res.extend(values_chunks);
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn memory_size(&self) -> usize {
@@ -158,7 +158,7 @@ impl LogicalColEncoder for ListColEncoder {
         if let Some(values_chunks) = self.values_encoder.finish(counter, shared_dict_ctx)? {
             res.extend(values_chunks);
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn submit_dict(&mut self, shared_dict_ctx: &mut SharedDictionaryContext) -> Result<()> {
@@ -212,7 +212,7 @@ impl LogicalColEncoder for ListOfStructOfPrimitiveColEncoder {
             }
             _ => panic!("Expecting List or LargeList data type"),
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn memory_size(&self) -> usize {
@@ -233,7 +233,7 @@ impl LogicalColEncoder for ListOfStructOfPrimitiveColEncoder {
                 res.push(field_chunk.update_column_index(*col_idx));
             }
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn submit_dict(&mut self, _shared_dict_ctx: &mut SharedDictionaryContext) -> Result<()> {
@@ -273,7 +273,7 @@ impl LogicalColEncoder for StructColEncoder {
                 res.extend(field_chunks);
             }
         }
-        Ok(res.is_empty().not().then(|| res))
+        Ok(res.is_empty().not().then_some(res))
     }
 
     fn memory_size(&self) -> usize {
@@ -299,7 +299,7 @@ impl LogicalColEncoder for StructColEncoder {
                 res.extend(field_chunks);
             }
         }
-        Ok((!res.is_empty()).then(|| res))
+        Ok((!res.is_empty()).then_some(res))
     }
 
     fn submit_dict(&mut self, shared_dict_ctx: &mut SharedDictionaryContext) -> Result<()> {
@@ -311,6 +311,7 @@ impl LogicalColEncoder for StructColEncoder {
     }
 }
 
+#[allow(clippy::only_used_in_recursion)]
 pub fn create_logical_encoder(
     field: FieldRef,
     field_id: i32,
@@ -324,7 +325,7 @@ pub fn create_logical_encoder(
         non_nest_types!() => Ok((
             Box::new(FlatColEncoder {
                 data_encoder: create_physical_encoder(
-                    &field.data_type(),
+                    field.data_type(),
                     max_chunk_size,
                     field.is_nullable(),
                     wasm_context,
@@ -342,11 +343,7 @@ pub fn create_logical_encoder(
                 DataType::Struct(fields)
                     if fields
                         .iter()
-                        .map(|f| match f.data_type() {
-                            non_nest_types!() => true,
-                            _ => false,
-                        })
-                        .fold(true, |acc, mk| acc && mk)
+                        .all(|f| matches!(f.data_type(), non_nest_types!()))
                         && cfg!(feature = "list-offsets-pushdown") =>
                 {
                     Ok((
@@ -372,7 +369,7 @@ pub fn create_logical_encoder(
                     // Validity and Offsets in List are encode together, and a physical encoder is created for them.
                     let offsets_validity_index = column_idx.next_column_index();
                     let offsets_encoder = create_physical_encoder(
-                        &field.data_type(),
+                        field.data_type(),
                         max_chunk_size,
                         field.is_nullable(),
                         wasm_context.clone(),
@@ -469,12 +466,12 @@ fn _extract_offsets_and_validity(list_arr: &dyn Array) -> ArrayRef {
     match list_arr.data_type() {
         DataType::List(_) => {
             let offsets = list_arr.as_list::<i32>().offsets().clone();
-            let nulls = list_arr.nulls().map(|x| x.clone());
+            let nulls = list_arr.nulls().cloned();
             Arc::new(Int32Array::new(offsets.into_inner(), nulls))
         }
         DataType::LargeList(_) => {
             let offsets = list_arr.as_list::<i64>().offsets().clone();
-            let nulls = list_arr.nulls().map(|x| x.clone());
+            let nulls = list_arr.nulls().cloned();
             Arc::new(Int64Array::new(offsets.into_inner(), nulls))
         }
         _ => panic!(),
@@ -500,6 +497,7 @@ fn extract_validity(list_arr: &dyn Array) -> ArrayRef {
 
 mod tests {
     #[test]
+    #[allow(clippy::arc_with_non_send_sync)]
     fn test_list_encoder() {
         use arrow::array::{Int32Builder, ListBuilder};
         use arrow_array::RecordBatch;
